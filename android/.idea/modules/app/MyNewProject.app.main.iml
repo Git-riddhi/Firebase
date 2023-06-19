@@ -54,6 +54,7 @@
     <orderEntry type="module" module-name="MyNewProject.react-native-firebase_messaging.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-google-signin_google-signin.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-masked-view_masked-view.main" />
+    <orderEntry type="module" module-name="MyNewProject.react-native-geolocation-service.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-gesture-handler.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-push-notification.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-safe-area-context.main" />

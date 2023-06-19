@@ -9,23 +9,23 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-12-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:6:5-76
-12-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:6:22-74
+12-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:6:5-76
+12-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:6:22-74
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:3:5-67
-13-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:3:22-64
+13-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:3:5-67
+13-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:3:22-64
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 14-->[com.facebook.flipper:flipper:0.125.0] /home/hb/.gradle/caches/transforms-3/87e9e28f7203a27b2f2a5f52d412de1f/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 14-->[com.facebook.flipper:flipper:0.125.0] /home/hb/.gradle/caches/transforms-3/87e9e28f7203a27b2f2a5f52d412de1f/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[:react-native-firebase_auth] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
-15-->[:react-native-firebase_auth] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+15-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+15-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[:react-native-firebase_auth] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
-16-->[:react-native-firebase_auth] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+16-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+16-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
 17
 18    <uses-feature
 18-->[com.google.android.gms:play-services-maps:18.0.2] /home/hb/.gradle/caches/transforms-3/e23e01d273cb9c4c5e7184dca9f2d7aa/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
@@ -106,139 +106,139 @@
 50-->[me.leolin:ShortcutBadger:1.1.22] /home/hb/.gradle/caches/transforms-3/3f12743e064b78d2af22204639dcde07/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
 51
 52    <application
-52-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:5:5-29:19
+52-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:5:5-29:19
 53        android:name="com.mynewproject.MainApplication"
-53-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:6:7-38
+53-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:6:7-38
 54        android:allowBackup="false"
-54-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:10:7-34
+54-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:10:7-34
 55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 55-->[androidx.core:core:1.7.0] /home/hb/.gradle/caches/transforms-3/22259c929aa488117423d75d2a95510f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 56        android:debuggable="true"
 57        android:icon="@mipmap/ic_launcher"
-57-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:8:7-41
+57-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:8:7-41
 58        android:label="@string/app_name"
-58-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:7:7-39
+58-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:7:7-39
 59        android:roundIcon="@mipmap/ic_launcher_round"
-59-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:9:7-52
+59-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:9:7-52
 60        android:testOnly="true"
 61        android:theme="@style/AppTheme"
-61-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:11:7-38
+61-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:11:7-38
 62        android:usesCleartextTraffic="true" >
-62-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:10:9-44
+62-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:10:9-44
 63        <activity
-63-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:13:9-111
+63-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:9-111
 64            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-64-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:13:19-83
+64-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:19-83
 65            android:exported="false" />
-65-->/home/hb/Desktop/MyNewProject/android/app/src/debug/AndroidManifest.xml:13:84-108
+65-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:84-108
 66        <activity
-66-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:12:7-24:18
+66-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:12:7-24:18
 67            android:name="com.mynewproject.MainActivity"
-67-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:13:9-37
+67-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:13:9-37
 68            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-68-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:15:9-118
+68-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:15:9-118
 69            android:exported="true"
-69-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:18:9-32
+69-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:18:9-32
 70            android:label="@string/app_name"
-70-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:14:9-41
+70-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:14:9-41
 71            android:launchMode="singleTask"
-71-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:16:9-40
+71-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:16:9-40
 72            android:windowSoftInputMode="adjustResize" >
-72-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:17:9-51
+72-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:17:9-51
 73            <intent-filter>
-73-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:20:9-23:25
+73-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:20:9-23:25
 74                <action android:name="android.intent.action.MAIN" />
-74-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:21:13-65
-74-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:21:21-62
+74-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:21:13-65
+74-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:21:21-62
 75
 76                <category android:name="android.intent.category.LAUNCHER" />
-76-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:22:13-73
-76-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:22:23-70
+76-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:22:13-73
+76-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:22:23-70
 77            </intent-filter>
 78        </activity>
 79
 80        <meta-data
-80-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:26:10-28:63
+80-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:26:10-28:63
 81            android:name="com.google.android.geo.API_KEY"
-81-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:27:6-51
+81-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:27:6-51
 82            android:value="AIzaSyAwnmhXdO_cKW1sfWtQ7T_djHGvQV4XOc0" />
-82-->/home/hb/Desktop/MyNewProject/android/app/src/main/AndroidManifest.xml:28:6-61
+82-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:28:6-61
 83
 84        <service
-84-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:40
+84-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:40
 85            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
-85-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-103
+85-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-103
 86            android:exported="false" />
-86-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+86-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
 87        <service
-87-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-23:19
+87-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-23:19
 88            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
-88-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-95
+88-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-95
 89            android:exported="false" >
-89-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+89-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
 90            <intent-filter>
-90-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
+90-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
 91                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-91-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
-91-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
+91-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
+91-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
 92            </intent-filter>
 93        </service>
 94
 95        <receiver
-95-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
+95-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
 96            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
-96-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-96
+96-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-96
 97            android:exported="true"
-97-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+97-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
 98            android:permission="com.google.android.c2dm.permission.SEND" >
-98-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-73
+98-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-73
 99            <intent-filter>
-99-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+99-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
 100                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-100-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
-100-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
+100-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
+100-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
 101            </intent-filter>
 102        </receiver>
 103
 104        <meta-data
-104-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-36:36
+104-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-36:36
 105            android:name="firebase_messaging_auto_init_enabled"
-105-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-64
+105-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-64
 106            android:value="true" />
-106-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-33
+106-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-33
 107        <meta-data
-107-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-39:32
+107-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-39:32
 108            android:name="com.google.firebase.messaging.default_notification_channel_id"
-108-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-89
+108-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-89
 109            android:value="" />
-109-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-29
+109-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-29
 110        <meta-data
-110-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:47
+110-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:47
 111            android:name="com.google.firebase.messaging.default_notification_color"
-111-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-84
+111-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-84
 112            android:resource="@color/white" />
-112-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-44
+112-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-44
 113        <meta-data
-113-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:36
+113-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:36
 114            android:name="app_data_collection_default_enabled"
-114-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-63
+114-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-63
 115            android:value="true" />
-115-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-33
+115-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-33
 116
 117        <service
-117-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:19
+117-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:19
 118            android:name="com.google.firebase.components.ComponentDiscoveryService"
-118-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-84
+118-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-84
 119            android:directBootAware="true"
-119-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-43
+119-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-43
 120            android:exported="false" >
-120-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+120-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
 121            <meta-data
-121-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:85
+121-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:85
 122                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-122-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-120
+122-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-120
 123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-82
+123-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-82
 124            <meta-data
 124-->[com.google.firebase:firebase-auth:21.2.0] /home/hb/.gradle/caches/transforms-3/0d002cadbf1248e194b988270c621212/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:69:13-71:85
 125                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -266,15 +266,15 @@
 136        </service>
 137
 138        <provider
-138-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:38
+138-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:38
 139            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-139-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
+139-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
 140            android:authorities="com.mynewproject.reactnativefirebaseappinitprovider"
-140-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-86
+140-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-86
 141            android:exported="false"
-141-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37
+141-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37
 142            android:initOrder="99" />
-142-->[:react-native-firebase_app] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
+142-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
 143
 144        <activity
 144-->[com.google.firebase:firebase-auth:21.2.0] /home/hb/.gradle/caches/transforms-3/0d002cadbf1248e194b988270c621212/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:29:9-46:20
@@ -387,10 +387,10 @@
 202            android:permission="com.google.android.c2dm.permission.SEND" >
 202-->[com.google.firebase:firebase-messaging:23.1.2] /home/hb/.gradle/caches/transforms-3/19955e10a2c16bace573161f50883e71/transformed/jetified-firebase-messaging-23.1.2/AndroidManifest.xml:34:13-73
 203            <intent-filter>
-203-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+203-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
 204                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-204-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
-204-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
+204-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
+204-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
 205            </intent-filter>
 206        </receiver>
 207        <!--
@@ -406,10 +406,10 @@
 214            android:exported="false" >
 214-->[com.google.firebase:firebase-messaging:23.1.2] /home/hb/.gradle/caches/transforms-3/19955e10a2c16bace573161f50883e71/transformed/jetified-firebase-messaging-23.1.2/AndroidManifest.xml:47:13-37
 215            <intent-filter android:priority="-500" >
-215-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
+215-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
 216                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-216-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
-216-->[:react-native-firebase_messaging] /home/hb/Desktop/MyNewProject/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
+216-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
+216-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
 217            </intent-filter>
 218        </service>
 219

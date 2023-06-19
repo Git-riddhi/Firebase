@@ -1,26 +1,31 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
-// import PhoneVerification from './Firebase/PhoneNumber';
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigatorScreen from './Firebase/Tracking/StackNavigator';
+// import FlashMessage from 'react-native-flash-message';
+
+//Screens
+// import ChooseLocation from './Firebase/Tracking/ChooseLocation';
+// import Home from './Firebase/Tracking/Home';
+
 
 
 const App = () => {
-
+    const Stack = createStackNavigator()
 
     return (
-        <View style={styles.container}>
+        <NavigationContainer>
 
-            {/* <PhoneVerification /> */}
-
-        </View>
+            <StackNavigatorScreen />
+            {/* <Stack.Navigator>
+                <Stack.Screen name="R-Map" component={Home} />
+                <Stack.Screen name="Choose Location" component={ChooseLocation} />
+            </Stack.Navigator> */}
+            {/* <FlashMessage
+                position="top"
+            /> */}
+        </NavigationContainer>
     );
 };
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        marginVertical: 70,
-    },
-
-});
 
 export default App;

@@ -35,6 +35,7 @@
     <orderEntry type="module" module-name="MyNewProject.react-native-firebase_messaging.main" scope="TEST" />
     <orderEntry type="module" module-name="MyNewProject.react-native-google-signin_google-signin.main" scope="TEST" />
     <orderEntry type="module" module-name="MyNewProject.react-native-masked-view_masked-view.main" scope="TEST" />
+    <orderEntry type="module" module-name="MyNewProject.react-native-geolocation-service.main" scope="TEST" />
     <orderEntry type="module" module-name="MyNewProject.react-native-gesture-handler.main" scope="TEST" />
     <orderEntry type="module" module-name="MyNewProject.react-native-push-notification.main" scope="TEST" />
     <orderEntry type="module" module-name="MyNewProject.react-native-safe-area-context.main" scope="TEST" />
