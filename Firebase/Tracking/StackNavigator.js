@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 // import FlashMessage from 'react-native-flash-message';
 
 //Screens
-import ChooseLocation from './Firebase/Tracking/ChooseLocation';
-import Home from './Firebase/Tracking/Home';
+import ChooseLocation from '../Tracking/ChooseLocation';
+import Home from '../Tracking/Home';
 
 
 

@@ -1,31 +1,15 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
-import StackNavigatorScreen from './Firebase/Tracking/StackNavigator';
-// import FlashMessage from 'react-native-flash-message';
-
-//Screens
-// import ChooseLocation from './Firebase/Tracking/ChooseLocation';
-// import Home from './Firebase/Tracking/Home';
-
-
+// App.js
+import React from "react";
+import StackNavigatorScreen from "./Firebase/Tracking/StackNavigator";
+import { BlogProvider } from "./Hook/UseContext/DataContext";
+import IndexScreen from "./Hook/UseContext";
 
 const App = () => {
-    const Stack = createStackNavigator()
-
-    return (
-        <NavigationContainer>
-
-            <StackNavigatorScreen />
-            {/* <Stack.Navigator>
-                <Stack.Screen name="R-Map" component={Home} />
-                <Stack.Screen name="Choose Location" component={ChooseLocation} />
-            </Stack.Navigator> */}
-            {/* <FlashMessage
-                position="top"
-            /> */}
-        </NavigationContainer>
-    );
+  return (
+    <BlogProvider>
+      <IndexScreen />
+    </BlogProvider>
+  );
 };
 
 export default App;

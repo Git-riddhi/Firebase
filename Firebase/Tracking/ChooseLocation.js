@@ -37,11 +37,14 @@ const ChooseLocation = (props) => {
     const fetchDestinationCords = (lat, lng, zipCode, cityText) => {
         console.log("zip code==>>>",zipCode)
         console.log('city texts',cityText)
+        // console.log('state====>',state)
+
         setState({
             ...state,
             destinationCords: {
                 latitude: lat,
-                longitude: lng
+                longitude: lng,
+                
             }
         })
     }
@@ -53,6 +56,7 @@ const ChooseLocation = (props) => {
                 style={{ backgroundColor: 'white', flex: 1, padding: 24 }}
             >
                 <View style={{ marginBottom: 16 }} />
+              
                 <AddressPickup
                     placheholderText="Enter Destination Location"
                     fetchAddress={fetchDestinationCords}
