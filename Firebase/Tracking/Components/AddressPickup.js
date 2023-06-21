@@ -52,7 +52,8 @@ const AddressPickup = ({
                 placeholder={placheholderText}
                 onPress={onPressAddress}
                 fetchDetails={true}
-                // onPress={onPressAddress}
+                renderDescription={row => row.description|| row.formatted_address || row.name} // custom description render
+              
                 query={{
                     key: GOOGLE_MAP_KEY,
                     language: 'en'

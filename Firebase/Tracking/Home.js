@@ -35,7 +35,7 @@ const Home = ({ navigation }) => {
 
     })
 
-    const { curLoc, time, distance, destinationCords, isLoading, coordinate,heading } = state
+    const { curLoc, time, distance, destinationCords, isLoading, coordinate, heading } = state
     const updateState = (data) => setState((state) => ({ ...state, ...data }));
 
 
@@ -47,7 +47,9 @@ const Home = ({ navigation }) => {
         const locPermissionDenied = await locationPermission()
         if (locPermissionDenied) {
             const { latitude, longitude, heading } = await getCurrentLocation()
-            console.log("get live location after 4 second",heading)
+           
+            // console.log("get live location after 4 second",heading)
+
             animate(latitude, longitude);
             updateState({
                 heading: heading,
@@ -74,6 +76,7 @@ const Home = ({ navigation }) => {
     }
     const fetchValue = (data) => {
         console.log("this is data", data)
+
         updateState({
             destinationCords: {
                 latitude: data.destinationCords.latitude,
@@ -129,22 +132,22 @@ const Home = ({ navigation }) => {
 
                     <Marker.Animated
                         ref={markerRef}
-                        coordinate={coordinate}
+                        coordinate={curLoc}
                     >
-                        {/* <Image
-                            source={imagePath.icBike}
+                        <Image
+                            source={require('../../assets/location.png')}
                             style={{
                                 width: 40,
                                 height: 40,
-                                transform: [{rotate: `${heading}deg`}]
+                                transform: [{ rotate: `${heading}deg` }]
                             }}
                             resizeMode="contain"
-                        /> */}
+                        />
                     </Marker.Animated>
 
                     {Object.keys(destinationCords).length > 0 && (<Marker
                         coordinate={destinationCords}
-                        image={imagePath.icGreenMarker}
+                        image={require('../../assets/location.png')}
                     />)}
 
                     {Object.keys(destinationCords).length > 0 && (<MapViewDirections

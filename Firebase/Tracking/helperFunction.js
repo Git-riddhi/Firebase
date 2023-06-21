@@ -11,7 +11,7 @@ export const getCurrentLocation = () =>
                     longitude: position.coords.longitude,
                     heading: position?.coords?.heading,
                 };
-                console
+              
                 resolve(cords);
             },
             error => {
