@@ -1,23 +1,21 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { NotificationServices, getFcmToken, requestUserPermission } from './Firebase/PushNotification';
-import AuthNavigator from './Firebase/EmailPassword/AuthNavigator';
-import PhoneVerification from './Firebase/PhoneNumber';
+import { NotificationServices, getFcmToken, requestUserPermission } from '../PushNotification/index';
 
-const App = () => {
+
+const GetNotification = () => {
 
     useEffect(() => {
         requestUserPermission();
         getFcmToken();
-        NotificationServices();
+        NotificationServices()
 
     }, []);
 
     return (
         <View style={styles.container}>
-            <Text>Hello</Text>
+            <Text style={styles.title}>Push Notification</Text>
 
-            {/* <PhoneVerification/> */}
         </View>
     )
 }
@@ -33,4 +31,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default App;
+export default GetNotification;

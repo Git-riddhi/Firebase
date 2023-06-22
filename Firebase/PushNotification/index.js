@@ -52,6 +52,7 @@ export const NotificationServices = () => {
     //Foreground message handling
 
     messaging().onMessage(async remoteMessage => {
+        remoteMessage
    
         console.log("remoteMessage.notification.title", remoteMessage.notification.title);
         Alert.alert(remoteMessage.notification.title, remoteMessage.notification.body);
