@@ -9,140 +9,140 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-12-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:21:3-75
-12-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:21:20-72
+12-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:21:3-75
+12-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:21:20-72
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:3:3-65
-13-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:3:20-62
+13-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:3:3-65
+13-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:3:20-62
 14    <uses-permission android:name="android.permission.ACCEPT_HANDOVER" />
-14-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:4:3-72
-14-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:4:20-69
+14-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:4:3-72
+14-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:4:20-69
 15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-15-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:5:3-83
-15-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:5:20-80
+15-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:5:3-83
+15-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:5:20-80
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:6:3-79
-16-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:6:20-76
+16-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:6:3-79
+16-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:6:20-76
 17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-17-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:7:3-77
-17-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:7:20-74
+17-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:7:3-77
+17-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:7:20-74
 18    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-18-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:8:3-78
-18-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:8:20-75
+18-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:8:3-78
+18-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:8:20-75
 19    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-19-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:9:3-77
-19-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:9:20-74
+19-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:9:3-77
+19-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:9:20-74
 20    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
-20-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:10:3-84
-20-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:10:20-81
+20-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:10:3-84
+20-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:10:20-81
 21    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
-21-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:11:3-75
-21-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:11:20-72
+21-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:11:3-75
+21-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:11:20-72
 22    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
-22-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:12:3-76
-22-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:12:20-73
+22-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:12:3-76
+22-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:12:20-73
 23    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-23-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:13:3-74
-23-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:13:20-71
+23-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:13:3-74
+23-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:13:20-71
 24    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-24-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:14:3-71
-24-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:14:20-68
+24-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:14:3-71
+24-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:14:20-68
 25    <uses-permission android:name="android.permission.BODY_SENSORS" />
-25-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:15:3-69
-25-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:15:20-66
+25-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:15:3-69
+25-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:15:20-66
 26    <uses-permission android:name="android.permission.BODY_SENSORS_BACKGROUND" />
-26-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:16:3-80
-26-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:16:20-77
+26-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:16:3-80
+26-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:16:20-77
 27    <uses-permission android:name="android.permission.CALL_PHONE" />
-27-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:17:3-67
-27-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:17:20-64
+27-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:17:3-67
+27-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:17:20-64
 28    <uses-permission android:name="android.permission.CAMERA" />
-28-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:18:3-63
-28-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:18:20-60
+28-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:18:3-63
+28-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:18:20-60
 29    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-29-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:19:3-69
-29-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:19:20-66
+29-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:19:3-69
+29-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:19:20-66
 30    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
-30-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:20:3-76
-30-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:20:20-73
+30-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:20:3-76
+30-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:20:20-73
 31    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-31-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:22:3-79
-31-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:22:20-76
+31-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:22:3-79
+31-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:22:20-76
 32    <uses-permission android:name="android.permission.READ_CALENDAR" />
-32-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:23:3-70
-32-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:23:20-67
+32-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:23:3-70
+32-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:23:20-67
 33    <uses-permission android:name="android.permission.READ_CALL_LOG" />
-33-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:24:3-70
-33-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:24:20-67
+33-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:24:3-70
+33-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:24:20-67
 34    <uses-permission android:name="android.permission.READ_CONTACTS" />
-34-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:25:3-70
-34-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:25:20-67
+34-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:25:3-70
+34-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:25:20-67
 35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-35-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:26:3-78
-35-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:26:20-75
+35-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:26:3-78
+35-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:26:20-75
 36    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-36-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:27:3-73
-36-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:27:20-70
+36-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:27:3-73
+36-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:27:20-70
 37    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-37-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:28:3-74
-37-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:28:20-71
+37-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:28:3-74
+37-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:28:20-71
 38    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-38-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:29:3-73
-38-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:29:20-70
+38-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:29:3-73
+38-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:29:20-70
 39    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
-39-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:30:3-75
-39-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:30:20-72
+39-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:30:3-75
+39-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:30:20-72
 40    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-40-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:31:3-73
-40-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:31:20-70
+40-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:31:3-73
+40-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:31:20-70
 41    <uses-permission android:name="android.permission.READ_SMS" />
-41-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:32:3-65
-41-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:32:20-62
+41-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:32:3-65
+41-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:32:20-62
 42    <uses-permission android:name="android.permission.RECEIVE_MMS" />
-42-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:33:3-68
-42-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:33:20-65
+42-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:33:3-68
+42-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:33:20-65
 43    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-43-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:34:3-68
-43-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:34:20-65
+43-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:34:3-68
+43-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:34:20-65
 44    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
-44-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:35:3-73
-44-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:35:20-70
+44-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:35:3-73
+44-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:35:20-70
 45    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-45-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:36:3-69
-45-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:36:20-66
+45-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:36:3-69
+45-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:36:20-66
 46    <uses-permission android:name="android.permission.SEND_SMS" />
-46-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:37:3-65
-46-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:37:20-62
+46-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:37:3-65
+46-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:37:20-62
 47    <uses-permission android:name="android.permission.USE_SIP" />
-47-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:38:3-64
-47-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:38:20-61
+47-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:38:3-64
+47-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:38:20-61
 48    <uses-permission android:name="android.permission.UWB_RANGING" />
-48-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:39:3-68
-48-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:39:20-65
+48-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:39:3-68
+48-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:39:20-65
 49    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
-49-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:40:3-71
-49-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:40:20-68
+49-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:40:3-71
+49-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:40:20-68
 50    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
-50-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:41:3-71
-50-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:41:20-68
+50-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:41:3-71
+50-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:41:20-68
 51    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-51-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:42:3-71
-51-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:42:20-68
+51-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:42:3-71
+51-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:42:20-68
 52    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-52-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:43:3-79
-52-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:43:20-76
+52-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:43:3-79
+52-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:43:20-76
 53    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 53-->[com.facebook.flipper:flipper:0.125.0] /home/hb/.gradle/caches/transforms-3/87e9e28f7203a27b2f2a5f52d412de1f/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 53-->[com.facebook.flipper:flipper:0.125.0] /home/hb/.gradle/caches/transforms-3/87e9e28f7203a27b2f2a5f52d412de1f/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 54    <uses-permission android:name="android.permission.WAKE_LOCK" />
-54-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
-54-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+54-->[:react-native-firebase_auth] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+54-->[:react-native-firebase_auth] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
 55    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-55-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
-55-->[:react-native-firebase_auth] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+55-->[:react-native-firebase_auth] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+55-->[:react-native-firebase_auth] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
 56
 57    <uses-feature
 57-->[com.google.android.gms:play-services-maps:18.0.2] /home/hb/.gradle/caches/transforms-3/e23e01d273cb9c4c5e7184dca9f2d7aa/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
@@ -223,139 +223,139 @@
 89-->[me.leolin:ShortcutBadger:1.1.22] /home/hb/.gradle/caches/transforms-3/3f12743e064b78d2af22204639dcde07/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
 90
 91    <application
-91-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:47:5-71:19
+91-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:47:5-72:19
 92        android:name="com.mynewproject.MainApplication"
-92-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:48:7-38
+92-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:48:7-38
 93        android:allowBackup="false"
-93-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:52:7-34
+93-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:52:7-34
 94        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 94-->[androidx.core:core:1.7.0] /home/hb/.gradle/caches/transforms-3/22259c929aa488117423d75d2a95510f/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 95        android:debuggable="true"
 96        android:icon="@mipmap/ic_launcher"
-96-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:50:7-41
+96-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:50:7-41
 97        android:label="@string/app_name"
-97-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:49:7-39
+97-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:49:7-39
 98        android:roundIcon="@mipmap/ic_launcher_round"
-98-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:51:7-52
+98-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:51:7-52
 99        android:testOnly="true"
 100        android:theme="@style/AppTheme"
-100-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:53:7-38
+100-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:53:7-38
 101        android:usesCleartextTraffic="true" >
-101-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:10:9-44
+101-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:10:9-44
 102        <activity
-102-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:9-111
+102-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:13:9-111
 103            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-103-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:19-83
+103-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:13:19-83
 104            android:exported="false" />
-104-->/home/hb/Documents/MyNewApplication/android/app/src/debug/AndroidManifest.xml:13:84-108
+104-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/debug/AndroidManifest.xml:13:84-108
 105        <activity
-105-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:54:7-66:18
+105-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:54:7-67:18
 106            android:name="com.mynewproject.MainActivity"
-106-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:55:9-37
+106-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:55:9-37
 107            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-107-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:57:9-118
+107-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:57:9-118
 108            android:exported="true"
-108-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:60:9-32
+108-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:60:9-32
 109            android:label="@string/app_name"
-109-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:56:9-41
+109-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:56:9-41
 110            android:launchMode="singleTask"
-110-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:58:9-40
+110-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:58:9-40
 111            android:windowSoftInputMode="adjustResize" >
-111-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:59:9-51
+111-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:59:9-51
 112            <intent-filter>
-112-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:62:9-65:25
+112-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:63:9-66:25
 113                <action android:name="android.intent.action.MAIN" />
-113-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:63:13-65
-113-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:63:21-62
+113-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:64:13-65
+113-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:64:21-62
 114
 115                <category android:name="android.intent.category.LAUNCHER" />
-115-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:64:13-73
-115-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:64:23-70
+115-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:65:13-73
+115-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:65:23-70
 116            </intent-filter>
 117        </activity>
 118
 119        <meta-data
-119-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:68:10-70:63
+119-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:69:10-71:63
 120            android:name="com.google.android.geo.API_KEY"
-120-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:69:6-51
+120-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:70:6-51
 121            android:value="AIzaSyAwnmhXdO_cKW1sfWtQ7T_djHGvQV4XOc0" />
-121-->/home/hb/Documents/MyNewApplication/android/app/src/main/AndroidManifest.xml:70:6-61
+121-->/home/hb/Documents/RN_Clone/Firebase/android/app/src/main/AndroidManifest.xml:71:6-61
 122
 123        <service
-123-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:40
+123-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:40
 124            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
-124-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-103
+124-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-103
 125            android:exported="false" />
-125-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+125-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
 126        <service
-126-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-23:19
+126-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-23:19
 127            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
-127-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-95
+127-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-95
 128            android:exported="false" >
-128-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+128-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
 129            <intent-filter>
-129-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
+129-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
 130                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-130-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
-130-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
+130-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
+130-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
 131            </intent-filter>
 132        </service>
 133
 134        <receiver
-134-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
+134-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-32:20
 135            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
-135-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-96
+135-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-96
 136            android:exported="true"
-136-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+136-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
 137            android:permission="com.google.android.c2dm.permission.SEND" >
-137-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-73
+137-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-73
 138            <intent-filter>
-138-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+138-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
 139                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-139-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
-139-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
+139-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
+139-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
 140            </intent-filter>
 141        </receiver>
 142
 143        <meta-data
-143-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-36:36
+143-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-36:36
 144            android:name="firebase_messaging_auto_init_enabled"
-144-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-64
+144-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-64
 145            android:value="true" />
-145-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-33
+145-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-33
 146        <meta-data
-146-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-39:32
+146-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-39:32
 147            android:name="com.google.firebase.messaging.default_notification_channel_id"
-147-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-89
+147-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-89
 148            android:value="" />
-148-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-29
+148-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-29
 149        <meta-data
-149-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:47
+149-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-42:47
 150            android:name="com.google.firebase.messaging.default_notification_color"
-150-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-84
+150-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-84
 151            android:resource="@color/white" />
-151-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-44
+151-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-44
 152        <meta-data
-152-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:36
+152-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:36
 153            android:name="app_data_collection_default_enabled"
-153-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-63
+153-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-63
 154            android:value="true" />
-154-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-33
+154-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-33
 155
 156        <service
-156-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:19
+156-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:19
 157            android:name="com.google.firebase.components.ComponentDiscoveryService"
-157-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-84
+157-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-84
 158            android:directBootAware="true"
-158-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-43
+158-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-43
 159            android:exported="false" >
-159-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+159-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
 160            <meta-data
-160-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:85
+160-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:85
 161                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-161-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-120
+161-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-120
 162                android:value="com.google.firebase.components.ComponentRegistrar" />
-162-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-82
+162-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-82
 163            <meta-data
 163-->[com.google.firebase:firebase-auth:21.2.0] /home/hb/.gradle/caches/transforms-3/0d002cadbf1248e194b988270c621212/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:69:13-71:85
 164                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -383,15 +383,15 @@
 175        </service>
 176
 177        <provider
-177-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:38
+177-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:38
 178            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-178-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
+178-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
 179            android:authorities="com.mynewproject.reactnativefirebaseappinitprovider"
-179-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-86
+179-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-86
 180            android:exported="false"
-180-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37
+180-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37
 181            android:initOrder="99" />
-181-->[:react-native-firebase_app] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
+181-->[:react-native-firebase_app] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
 182
 183        <activity
 183-->[com.google.firebase:firebase-auth:21.2.0] /home/hb/.gradle/caches/transforms-3/0d002cadbf1248e194b988270c621212/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:29:9-46:20
@@ -504,10 +504,10 @@
 241            android:permission="com.google.android.c2dm.permission.SEND" >
 241-->[com.google.firebase:firebase-messaging:23.1.2] /home/hb/.gradle/caches/transforms-3/19955e10a2c16bace573161f50883e71/transformed/jetified-firebase-messaging-23.1.2/AndroidManifest.xml:34:13-73
 242            <intent-filter>
-242-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
+242-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:29
 243                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-243-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
-243-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
+243-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-81
+243-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-78
 244            </intent-filter>
 245        </receiver>
 246        <!--
@@ -523,10 +523,10 @@
 253            android:exported="false" >
 253-->[com.google.firebase:firebase-messaging:23.1.2] /home/hb/.gradle/caches/transforms-3/19955e10a2c16bace573161f50883e71/transformed/jetified-firebase-messaging-23.1.2/AndroidManifest.xml:47:13-37
 254            <intent-filter android:priority="-500" >
-254-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
+254-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:29
 255                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-255-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
-255-->[:react-native-firebase_messaging] /home/hb/Documents/MyNewApplication/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
+255-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-78
+255-->[:react-native-firebase_messaging] /home/hb/Documents/RN_Clone/Firebase/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:25-75
 256            </intent-filter>
 257        </service>
 258
