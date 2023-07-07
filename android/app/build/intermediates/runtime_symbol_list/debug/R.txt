@@ -2179,6 +2179,7 @@ int string character_counter_overflowed_content_description 0x7f10003f
 int string character_counter_pattern 0x7f100040
 int string chip_text 0x7f100041
 int string clear_text_end_icon_content_description 0x7f100042
+int string com_google_firebase_crashlytics_mapping_file_id 0x7f1000a8
 int string combobox_description 0x7f100043
 int string common_google_play_services_enable_button 0x7f100044
 int string common_google_play_services_enable_text 0x7f100045

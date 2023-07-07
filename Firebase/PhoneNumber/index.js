@@ -1,173 +1,122 @@
-import React, { useState, useEffect } from 'react';
-import { Button, TextInput, Text, TouchableOpacity, Alert, View } from 'react-native';
-import auth from '@react-native-firebase/auth';
-import { NotificationServices, requestUserPermission } from '../PushNotification';
-import messaging from '@react-native-firebase/messaging';
+import React, { useState, useEffect } from "react";
+import { Button, TextInput, Text, View } from "react-native";
+import auth from "@react-native-firebase/auth";
+import { NotificationServices, requestUserPermission } from "../PushNotification";
 
-
-const PhoneVerification = () => {
-
-  const [confirm, setConfirm] = useState(null);
-  const [code, setCode] = useState('');
-
-
+export default function PhoneVerification() {
   // Set an initializing state whilst Firebase connects
-
   const [initializing, setInitializing] = useState(true);
   const [user, setUser] = useState();
+  const [number, setNumber] = useState("");
 
   // If null, no SMS has been sent
+  const [confirm, setConfirm] = useState(null);
+
+  const [code, setCode] = useState("");
 
   // Handle user state changes
-
-  const onAuthStateChanged = user => {
-    console.log('user ====>', user);
-    // if (user) {
-    //   // Some Android devices can automatically process the verification code (OTP) message, and the user would NOT need to enter the code.
-    //   // Actually, if he/she tries to enter it, he/she will get an error message because the code was already used in the background.
-    //   // In this function, make sure you hide the component(s) for entering the code and/or navigate away from this screen.
-    //   // It is also recommended to display a message to the user informing him/her that he/she has successfully logged in.
-    // }
+  function onAuthStateChanged(user) {
     setUser(user);
     if (initializing) setInitializing(false);
-  };
+  }
 
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
     return subscriber; // unsubscribe on unmount
   }, []);
 
-  // useEffect(() => {
-
-  //   const unsubscribe = messaging().onMessage(async remoteMessage => {
-  //     Alert.alert('A new FCM Token mssage arrived ==>', JSON.stringify(remoteMessage))
-  //   })
-  //   return unsubscribe;
-  // }, []);
-
-  // useEffect(() => {
-  //   NotificationServices(),
-  //     requestUserPermission()
-  // }, [])
-
-  // Handle the verify phone button press
-  const verifyPhoneNumber = async (phoneNumber) => {
-    console.log('verifyPhoneNumber function call');
-    const confirmation = await auth().verifyPhoneNumber(phoneNumber);
-    setConfirm(confirmation);
-    console.log('verifyPhoneNumber', phoneNumber);
-  };
-
-
-  // Handle confirm code button press
-  const confirmCode = async () => {
-    console.log('ConfirmCode function call.');
+  // Handle create account button press
+  async function createAccount() {
     try {
-      console.log(' Code ====>', code)
-      const res = await confirm.confirm(code);
-      console.log(' response ====>', res)
-
-      console.log('Valid code.');
+      await auth().createUserWithEmailAndPassword(
+        "vivek.doe@example.com",
+        "SecretPassword!"
+      );
+      console.log("User account created & signed in!");
     } catch (error) {
-      console.log(error, "<====== error")
+      if (error.code === "auth/email-already-in-use") {
+        console.log("That email address is already in use!");
+      }
 
-      console.log('Invalid code.');
+      if (error.code === "auth/invalid-email") {
+        console.log("That email address is invalid!");
+      }
+      console.error(error);
     }
-    // try {
-    //     const credential = auth.PhoneAuthProvider.credential(confirm.verificationId, code);
-    //     let userData = await auth().currentUser.linkWithCredential(credential);
-    //     setUser(userData.user);
-    // } catch (error) {
-    //     if (error.code == 'auth/invalid-verification-code') {
-    //         console.log('Invalid code.');
-    //     } else {
-    //         console.log('Account linking error');
-    //     }
-    // }
-  };
-
-  if (!confirm) {
-    return (
-      <View>
-        {/* <TextInput
-          value={number}
-          placeholder='Enter PhoneNumber'
-          onChangeText={number => setNumber(number)}
-          style={{
-            borderWidth: 0.5,
-            marginHorizontal: 5,
-            borderRadius: 10,
-            padding: 10,
-            width: '100%',
-            height: 50,
-            borderColor: 'grey',
-            fontSize: 15,
-          }}
-          keyboardType="number-pad"
-        /> */}
-
-        <TouchableOpacity
-          style={{
-            width: 100,
-            height: 50,
-            padding: 15,
-            alignSelf: 'center',
-            borderWidth: 0.5,
-            backgroundColor: 'green',
-            marginTop: 40,
-          }}
-          onPress={() => verifyPhoneNumber('+918154909954')}>
-
-          <Text style={{ color: 'white', textAlign: 'center', fontSize: 15 }}> Sign In</Text>
-
-        </TouchableOpacity>
-
-      </View>
-
-    );
   }
 
-  console.log(code)
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TextInput
-        value={code}
-        onChangeText={text => setCode(text)}
-        style={{ borderWidth: 1, width: 200, marginBottom: 50 }}
-        keyboardType="number-pad"
-        maxLength={6}
-      />
+  // Handle the verify phone button press
+  async function verifyPhoneNumber(phoneNumber) {
+    const confirmation = await auth().verifyPhoneNumber(phoneNumber, true, true);
+    setConfirm(confirmation);
+    console.log("confirmation==>", confirmation);
+  }
 
-      <Button title="Confirm Code" onPress={() => confirmCode()} />
-    </View>
-  );
+  // Handle confirm code button press
+  async function confirmCode() {
+    try {
+      const credential = auth.PhoneAuthProvider.credential(
+        confirm.verificationId,
+        code
+      );
+      console.log("credential==>", credential);
+      console.log("Code=====>", code);
+      let userData = await auth().currentUser.linkWithCredential(credential);
+      setUser(userData.user);
+    } catch (error) {
+      if (error.code == "auth/invalid-verification-code") {
+        console.log("Invalid code.");
+      } else {
+        console.log("Account linking error");
+      }
+    }
+  }
 
-  //     if (initializing) return null;
+  useEffect(() => {
+    requestUserPermission();
+    NotificationServices()
 
-  //     if (!user) {
-  //         return <Button title="Login" onPress={() => createAccount()} />;
-  //     } else if (!user.phoneNumber) {
-  //         if (!confirm) {
-  //             return (
-  //                 <Button
-  //                     title="Verify Phone Number"
-  //                     onPress={() => verifyPhoneNumber('ENTER A VALID TESTING OR REAL PHONE NUMBER HERE')}
-  //                 />
-  //             );
-  //         }
-  //         return (
-  //             <>
-  //                 <TextInput value={code} onChangeText={text => setCode(text)} />
-  //                 <Button title="Confirm Code" onPress={() => confirmCode()} />
-  //             </>
-  //         );
-  //     } else {
-  //         return (
-  //             <Text>
-  //                 Welcome! {user.phoneNumber} linked with {user.email}
-  //             </Text>
-  //         );
-  //     }
-};
+}, []);
 
-export default PhoneVerification;
+  if (initializing) return null;
+
+  if (!user) {
+    return <Button title="Login" onPress={() => createAccount()} />;
+  } else if (!user.phoneNumber) {
+    if (!confirm) {
+      return (
+        <View>
+          <TextInput
+            value={number}
+            onChangeText={(text) => setNumber(text)}
+            style={{
+              backgroundColor: "skyblue",
+              width: "70%",
+              alignSelf: "center",
+              borderColor: "black",
+              borderWidth: 1,
+              marginVertical: 30,
+            }}
+          />
+          <Button
+            color={'green'}
+            title="Verify Phone Number"
+            onPress={() => verifyPhoneNumber(number)}
+          />
+        </View>
+      );
+    }
+    return (
+      <>
+        <TextInput value={code} onChangeText={(text) => setCode(text)} />
+        <Button title="Confirm Code" onPress={() => confirmCode()} />
+      </>
+    );
+  } else {
+    return (
+      <Text>
+        Welcome! {user.phoneNumber} linked with {user.email}
+      </Text>
+    );
+  }
+}
