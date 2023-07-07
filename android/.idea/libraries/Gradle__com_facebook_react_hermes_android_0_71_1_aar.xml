@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.react:hermes-android:0.71.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/16762b391fabd68926f85b7ded92ee45/transformed/jetified-hermes-android-0.71.1-debug/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/16762b391fabd68926f85b7ded92ee45/transformed/jetified-hermes-android-0.71.1-debug/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6548546ca3e89d42e31b37da46b021d3/transformed/jetified-hermes-android-0.71.1-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6548546ca3e89d42e31b37da46b021d3/transformed/jetified-hermes-android-0.71.1-debug/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

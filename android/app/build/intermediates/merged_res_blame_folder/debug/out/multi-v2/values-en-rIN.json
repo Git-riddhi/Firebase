@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mynewproject.app-mergeDebugResources-37:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.mynewproject.app-mergeDebugResources-38:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "/home/hb/.gradle/caches/transforms-3/22259c929aa488117423d75d2a95510f/transformed/core-1.7.0/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/hb/.gradle/caches/transforms-3/3f2242abc41877ffa349b67f8cbd55de/transformed/core-1.7.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/hb/.gradle/caches/transforms-3/1b4d19d8ac0ad66f9610e5e795a45a62/transformed/appcompat-1.4.1/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/hb/.gradle/caches/transforms-3/06cf9bdb0ac4a95baccb94d03abab443/transformed/appcompat-1.4.1/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/hb/.gradle/caches/transforms-3/fc1459760e70a8a94820509c56af159c/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/hb/.gradle/caches/transforms-3/dd93d939b0c6373c794c818ab6180612/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
