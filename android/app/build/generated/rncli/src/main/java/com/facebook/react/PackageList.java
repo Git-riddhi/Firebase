@@ -25,6 +25,8 @@ import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
 // @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-fbsdk-next
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 // react-native-geolocation-service
 import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 // react-native-gesture-handler
@@ -89,6 +91,7 @@ public class PackageList {
       new ReactNativeFirebaseMessagingPackage(),
       new RNGoogleSigninPackage(),
       new RNCMaskedViewPackage(),
+      new FBSDKPackage(),
       new RNFusedLocationPackage(),
       new RNGestureHandlerPackage(),
       new MapsPackage(),

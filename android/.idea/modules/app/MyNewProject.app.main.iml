@@ -58,6 +58,7 @@
     <orderEntry type="module" module-name="MyNewProject.react-native-firebase_messaging.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-google-signin_google-signin.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-masked-view_masked-view.main" />
+    <orderEntry type="module" module-name="MyNewProject.react-native-fbsdk-next.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-geolocation-service.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-gesture-handler.main" />
     <orderEntry type="module" module-name="MyNewProject.react-native-push-notification.main" />
@@ -90,6 +91,8 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-annotations:16.2.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.concurrent:concurrent-futures:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.zxing:core:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.8" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.flipper:flipper:0.125.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.flipper:flipper-network-plugin:0.125.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.flipper:flipper-fresco-plugin:0.125.0@aar" level="project" />
@@ -147,6 +150,30 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:20.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:20.3.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-components:17.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth:20.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-auth-base:18.0.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-fido:20.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-android-sdk:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-core:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-bolts:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.core:core-ktx:1.6.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.installreferrer:installreferrer:1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-common:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media:media:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-login:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-share:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-applinks:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-messenger:15.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:facebook-gamingservices:15.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-location:19.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-places-placereport:17.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-maps:18.0.2@aar" level="project" />
