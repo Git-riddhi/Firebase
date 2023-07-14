@@ -158,7 +158,7 @@ const RegisterScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </KeyboardAvoidingView>
             </ScrollView>
-            <Text
+            {/* <Text
                 style={{
                     fontSize: 18,
                     textAlign: "center",
@@ -166,7 +166,7 @@ const RegisterScreen = ({ navigation }) => {
                 }}
             >
                 React Native Firebase Authentication
-            </Text>
+            </Text> */}
             {/* <Text
         style={{
           fontSize: 16,

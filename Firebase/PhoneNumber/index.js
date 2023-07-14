@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, TextInput, Text, View } from "react-native";
 import auth from "@react-native-firebase/auth";
-import { NotificationServices, requestUserPermission } from "../PushNotification";
+
 
 export default function PhoneVerification() {
   // Set an initializing state whilst Firebase connects
@@ -14,16 +14,16 @@ export default function PhoneVerification() {
 
   const [code, setCode] = useState("");
 
-  // Handle user state changes
-  function onAuthStateChanged(user) {
-    setUser(user);
-    if (initializing) setInitializing(false);
-  }
+  // // Handle user state changes
+  // function onAuthStateChanged(user) {
+  //   setUser(user);
+  //   if (initializing) setInitializing(false);
+  // }
 
-  useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
-  }, []);
+  // useEffect(() => {
+  //   const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+  //   return subscriber; // unsubscribe on unmount
+  // }, []);
 
   // Handle create account button press
   async function createAccount() {
@@ -72,11 +72,7 @@ export default function PhoneVerification() {
     }
   }
 
-  useEffect(() => {
-    requestUserPermission();
-    NotificationServices()
 
-}, []);
 
   if (initializing) return null;
 
