@@ -95,9 +95,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.mynewproject"
+    namespace "com.firebaseauth"
     defaultConfig {
-        applicationId "com.mynewproject"
+        applicationId "com.firebaseauth"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

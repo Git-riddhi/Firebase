@@ -1,11 +1,10 @@
 import React from 'react';
-import GoogleLoginWithFirebase from './Firebase/GoogleLogin/GoogleSignIn';
-import FacebookLogin from './Firebase/GoogleLogin/FacebookLogin';
+import { Text } from 'react-native';
 
 
 const App = () => {
   return (
-  <FacebookLogin/>
+    <Text>Hello firebase</Text>
   );
 };
 
