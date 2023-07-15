@@ -1768,32 +1768,32 @@
   dependencies:
     "invariant" "^2.2.4"
 
-"@react-native-firebase/app@^17.4.3", "@react-native-firebase/app@17.5.0", "@react-native-firebase/app@18.1.0":
-  "integrity" "sha512-8DWjguVmVYmuPWI7mhXlmLB6GxKnPjUjZ4Wnnyj3Wh5uqHzgUREHEA1aH92PT84LJLZL8F6dJZk+fIyo9UyXnA=="
-  "resolved" "https://registry.npmjs.org/@react-native-firebase/app/-/app-17.5.0.tgz"
-  "version" "17.5.0"
+"@react-native-firebase/app@^18.2.0", "@react-native-firebase/app@18.2.0":
+  "integrity" "sha512-enVr+2Wl1LfYBb0TT7SI0L7RSXzOX25dPUVREw5W3ip05CTuJv10Nl7ffk7AfB53SU9IhPz5zJMIWncYQNodug=="
+  "resolved" "https://registry.npmjs.org/@react-native-firebase/app/-/app-18.2.0.tgz"
+  "version" "18.2.0"
   dependencies:
     "opencollective-postinstall" "^2.0.1"
     "superstruct" "^0.6.2"
 
-"@react-native-firebase/auth@^17.4.3":
-  "integrity" "sha512-iF5Wv7dcDPmxu2om5SkPVGPELAwahAp3izFXjrv6wQAFmOTQ+2rEIDRBFMmS7EZ/qwNodvKK3vgDLEnOxDtTAQ=="
-  "resolved" "https://registry.npmjs.org/@react-native-firebase/auth/-/auth-17.5.0.tgz"
-  "version" "17.5.0"
+"@react-native-firebase/auth@^18.2.0":
+  "integrity" "sha512-POYGACMNSw9aV/u1eGIj0Xf78L8UItcE1pRt5f1fTXPBzPkn1feZcQ8G1oHtMxETQqtKKWsQ45n2NCcW7FnoLw=="
+  "resolved" "https://registry.npmjs.org/@react-native-firebase/auth/-/auth-18.2.0.tgz"
+  "version" "18.2.0"
   dependencies:
     "plist" "^3.0.5"
 
-"@react-native-firebase/crashlytics@^18.1.0":
-  "integrity" "sha512-IIN68Z3aRFmeoAo1z2GrXjWx6NHH3qe4U9xPDyYiaAEPdmn3dEVb5zeMuX2Vms5uI0ABeaTjDw2QBF4kqsQhMQ=="
-  "resolved" "https://registry.npmjs.org/@react-native-firebase/crashlytics/-/crashlytics-18.1.0.tgz"
-  "version" "18.1.0"
+"@react-native-firebase/crashlytics@^18.2.0":
+  "integrity" "sha512-nigR9KfK9bjJpklrvpti3gdRSRyc0H6GgYWhfn7dyNAN9h/fSuSH/JFhuT0LHFF3KveNc8o4j+AP77Io5Xyb3w=="
+  "resolved" "https://registry.npmjs.org/@react-native-firebase/crashlytics/-/crashlytics-18.2.0.tgz"
+  "version" "18.2.0"
   dependencies:
     "stacktrace-js" "^2.0.0"
 
-"@react-native-firebase/messaging@^17.4.3":
-  "integrity" "sha512-9jB7jEt4ySdALio2qwquAkXI106GTdPEuGY+vUFuNT6Wwwc5VQhyiJ5yforaF0BEsppFgK151PLYQQdIhahgzA=="
-  "resolved" "https://registry.npmjs.org/@react-native-firebase/messaging/-/messaging-17.5.0.tgz"
-  "version" "17.5.0"
+"@react-native-firebase/messaging@^18.2.0":
+  "integrity" "sha512-bnQkU9zldQUQRK0vbhfjMq186nqrMqUeiJcWAcPqKeGvmMGPLO+KsLFqlU7lI/CDK6+J724sLQl/JkAEIR7pEw=="
+  "resolved" "https://registry.npmjs.org/@react-native-firebase/messaging/-/messaging-18.2.0.tgz"
+  "version" "18.2.0"
 
 "@react-native-google-signin/google-signin@^9.1.0":
   "integrity" "sha512-a7yyJyytNxi1w1KFy8iFSvAIgssepI/POQrdpZqP+crYNbYYGctCH9QaYu0zMFlQfUsvc6NY+duV1/FnftnETQ=="
