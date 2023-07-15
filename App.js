@@ -1,10 +1,16 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+import PhoneAuth from './Firebase/PhoneNumber/PhoneAuth';
+import FacebookLogin from './Firebase/GoogleLogin/FacebookLogin';
 
 
 const App = () => {
   return (
-    <Text>Hello firebase</Text>
+
+    <View style={{flex:1}}>
+      <FacebookLogin />
+    </View>
+
   );
 };
 
