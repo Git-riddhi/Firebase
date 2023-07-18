@@ -7,7 +7,7 @@ const PhoneAuthentication = () => {
 
     const signInWithPhoneNumber = async (phoneNumber) => {
         try {
-            const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
+            const confirmation = await auth().signInWithPhoneNumber(phoneNumber, true);
             console.log("confirmation==", confirmation);
         } catch (error) {
             if (error.code == 'auth/invalid-phone-number') {
