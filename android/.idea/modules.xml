@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FirebaseAuth.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.main.iml" filepath="$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/196223741/FirebaseAuth.notifee_react-native.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2049540906/FirebaseAuth.react-native-async-storage_async-storage.main.iml" />
@@ -31,6 +35,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.main.iml" filepath="$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/224960971/FirebaseAuth.react-native-firebase_messaging.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1868520466/FirebaseAuth.react-native-fs.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.iml" filepath="$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1080069971/FirebaseAuth.react-native-geolocation-service.main.iml" />
@@ -64,6 +72,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-416654906/FirebaseAuth.react-native-screens.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.iml" filepath="$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-144648774/FirebaseAuth.rn-fetch-blob.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/405009299/react-native-gradle-plugin.test.iml" />

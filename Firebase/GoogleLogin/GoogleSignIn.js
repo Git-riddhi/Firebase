@@ -1,14 +1,14 @@
 
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import React, { useEffect, useState } from 'react';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View , Button} from 'react-native';
 
 
 
 const GoogleLoginWithFirebase = () => {
 
     GoogleSignin.configure({
-        webClientId: '151306368243-jomijdvllp2f16i3lsg54uu02m2udghc.apps.googleusercontent.com',
+        webClientId: '897245074098-6ck2n188hsjhqic8ovejk5a3j9bm5mec.apps.googleusercontent.com',
       });
 
     async function onGoogleButtonPress() {

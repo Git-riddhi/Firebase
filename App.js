@@ -1,16 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import PhoneAuth from './Firebase/PhoneNumber/PhoneAuth';
-import FacebookLogin from './Firebase/GoogleLogin/FacebookLogin';
-import PhoneAuthentication from './Firebase/PhoneNumber/PhoneAuth';
-import FacebookSignin from './Firebase/GoogleLogin/FacebookSignin';
+import { Text, View } from 'react-native'
+import ImageDownloadWithNotifee from './Firebase/PushNotification/LocalPushNotification/ImageDownloadWithNotifee';
+
 
 
 const App = () => {
   return (
 
-    <View style={{flex:1}}>
-      <FacebookLogin />
+    <View style={{ flex: 1 }}>
+
+      <ImageDownloadWithNotifee />
+
     </View>
 
   );
