@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native'
-import ImageDownloadWithNotifee from './Firebase/PushNotification/LocalPushNotification/ImageDownloadWithNotifee';
-
+import Navigators from './Firebase/NotificationsApp/Navigators';
 
 
 const App = () => {
@@ -9,7 +8,7 @@ const App = () => {
 
     <View style={{ flex: 1 }}>
 
-      <ImageDownloadWithNotifee />
+      <Navigators />
 
     </View>
 
