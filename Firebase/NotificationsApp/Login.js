@@ -12,6 +12,7 @@ import {
     Alert,
     TouchableOpacity,
     ImageBackground,
+    ActivityIndicator
 } from "react-native";
 
 const Login = (props) => {
@@ -22,6 +23,8 @@ const Login = (props) => {
 
     const [checkEmail, setCheckEmail] = useState("");
     const [checkPassword, setCheckPassword] = useState("");
+
+    const [loading, setLoading] = useState(false);
 
     const firstTextInput = useRef();
 
@@ -74,6 +77,7 @@ const Login = (props) => {
 
     // Function for get data from Registerkey of asyncstorage
     const getData = async () => {
+        setLoading(true); // Show loader
         const showItem = await AsyncStorage.getItem("Registerkey");
         const getItem = JSON.parse(showItem);
 
@@ -83,6 +87,7 @@ const Login = (props) => {
             Alert.alert("Please register yourself first.");
             setEmail("");
             setPassword("");
+            setLoading(false)
         }
 
         // const emails = getItem.map((dataobj) => dataobj.email)
@@ -105,6 +110,7 @@ const Login = (props) => {
 
                 return item;
             }
+
         });
 
         console.log("existingEmail ===>", existingEmail);
@@ -112,9 +118,10 @@ const Login = (props) => {
         if (existingEmail.length !== 0) {
             await AsyncStorage.setItem("Loginkey", JSON.stringify(existingEmail));
 
-            props.navigation.navigate("Home");
+            props.navigation.replace('BottomTab');
             setEmail("");
             setPassword("");
+            setLoading(false);
         } else {
             Alert.alert("Invalid credentials. Please try again.");
         }
@@ -165,16 +172,16 @@ const Login = (props) => {
                 </View>
 
                 <View style={styles.Login}>
-                        <TouchableOpacity  onPress={() => {
-                            if (Login()) {
-                                getData();
-                            }
-                        }}>
+                    <TouchableOpacity onPress={() => {
+                        if (Login()) {
+                            getData();
+                        }
+                    }}>
 
-                            <Text style={styles.LoginButtonText}> LOGIN </Text>
+                        <Text style={styles.LoginButtonText}> LOGIN </Text>
 
-                        </TouchableOpacity>
-                    </View>
+                    </TouchableOpacity>
+                </View>
 
                 <View style={styles.SignUp}>
                     <Text style={styles.footerText}>Or create account</Text>
@@ -192,6 +199,16 @@ const Login = (props) => {
                         />
                     </TouchableOpacity>
                 </View>
+
+                {loading && (
+
+                    <ActivityIndicator
+                        style={styles.loader}
+                        size={30}
+                        color="orange"
+                    />
+
+                )}
             </ImageBackground>
         </View>
     );
@@ -259,7 +276,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "flex-end",
         margin: 30,
-        marginVertical:50
+        marginVertical: 50
     },
 
     aerrowTouch: {
@@ -274,13 +291,23 @@ const styles = StyleSheet.create({
         width: 25,
         tintColor: "white",
     },
-  
+
     footerText: {
         fontSize: 15,
         color: "orange",
         alignSelf: "center",
         fontWeight: "bold",
         margin: 10,
+    },
+    loader: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent background
     },
 });
 

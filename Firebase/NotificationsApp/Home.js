@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
 import React, { useCallback, useEffect, useState } from "react";
-import { BackHandler, Button, Dimensions, ImageBackground } from "react-native";
+import { BackHandler, Button, Dimensions, ImageBackground, ToastAndroid } from "react-native";
 import {
     View,
     StyleSheet,
@@ -15,6 +15,9 @@ import notifee, { AndroidStyle } from '@notifee/react-native';
 import { NotificationServices, getFcmToken, requestUserPermission } from "../PushNotification";
 import messaging from '@react-native-firebase/messaging';
 import { Badge } from 'react-native-paper';
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import CartOutlineIcon from 'react-native-vector-icons/Ionicons'
+import { PushNotification } from "react-native-push-notification";
 
 const deviceWidth = Dimensions.get("screen").width;
 const deviceheight = Dimensions.get("screen").height;
@@ -90,11 +93,31 @@ const Home = (props) => {
     };
 
     useEffect(() => {
-        requestUserPermission();
-        getFcmToken();
-        NotificationServices()
+        const unsubscribeOnMessage = messaging().onMessage(async remoteMessage => {
+            // Handle foreground notification
+            console.log('A new FCM message arrived!', JSON.stringify(remoteMessage));
 
+            // Display a toast notification with the message body
+            ToastAndroid.showWithGravityAndOffset(
+                remoteMessage.notification.body,
+                ToastAndroid.LONG,
+                ToastAndroid.TOP,
+                25,
+                50
+            );
+        });
+
+        return () => {
+            unsubscribeOnMessage();
+        };
     }, []);
+
+    // useEffect(() => {
+    //     requestUserPermission();
+    //     getFcmToken();
+    //     NotificationServices()
+
+    // }, []);
 
 
     const onDisplayNotification = async () => {
@@ -130,16 +153,27 @@ const Home = (props) => {
                 resizeMode="cover"
                 style={styles.ImageBackground}
             >
-                <View style={styles.firstView}>
-                    <View>
-                        <Text style={styles.heading}>Hello,</Text>
-                        <Text style={styles.heading}>{firstName} {lastName}</Text>
+
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <View style={styles.firstView}>
+                        <View>
+                            <Text style={styles.heading}>Hello,</Text>
+                            <Text style={styles.heading}>{firstName} {lastName}</Text>
+                        </View>
+                        <Image source={{ uri: image }} style={styles.profileImageStyle} />
                     </View>
-                    <Image source={{ uri: image }} style={styles.profileImageStyle} />
+
+                    <View style={styles.iconsContainer}>
+                        <TouchableOpacity style={styles.icon}>
+                            <Ionicons name="notifications-outline" size={24} color="white" />
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.icon} onPress={() => {props.navigation.navigate('AddToCart') }}>
+                            <CartOutlineIcon name="cart-outline" color={'white'} size={30} />
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
-
-                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                {/* <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                     <Button title="Display Notification" onPress={() => { onDisplayNotification() }} />
 
                     <TouchableOpacity
@@ -158,7 +192,7 @@ const Home = (props) => {
                             {badgeCount}
                         </Badge>
                     </TouchableOpacity>
-                </View>
+                </View> */}
 
 
                 <TouchableOpacity
@@ -205,7 +239,7 @@ const styles = StyleSheet.create({
     },
     firstView: {
         justifyContent: "space-between",
-        margin: 30,
+        margin: 25,
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -260,6 +294,14 @@ const styles = StyleSheet.create({
         width: 80,
         marginVertical: 20
 
-    }
+    },
+    iconsContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        width: '30%'
+
+    },
+
 });
 export default Home;

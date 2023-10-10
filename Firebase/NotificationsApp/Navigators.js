@@ -5,6 +5,8 @@ import Splash from "./Splash";
 import SignUp from "./Signup";
 import Home from "./Home";
 import { NavigationContainer } from "@react-navigation/native";
+import BottomTabNavigator from "./BottomTabNavigators";
+import AddCartScreen from "./AddCartScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +24,9 @@ const Navigators = () => {
                 <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="SignUp" component={SignUp} />
-                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="BottomTab" component={BottomTabNavigator} />
+                <Stack.Screen name="AddToCart" component={AddCartScreen} />
+
             </Stack.Navigator>
         </NavigationContainer>
     );
