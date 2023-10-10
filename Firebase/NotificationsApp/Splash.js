@@ -21,7 +21,7 @@ const Splash = (props) => {
         }
         else {
             setTimeout(() => {
-                props.navigation.navigate("Home")
+                props.navigation.replace('BottomTab')
             }, 1000);
         }
     };

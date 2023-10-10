@@ -11,8 +11,10 @@ import {
     Alert,
     TouchableOpacity,
     ImageBackground,
+    Modal,
+    Button
 } from "react-native";
-import ImageCropPicker from "react-native-image-crop-picker";
+import ImagePicker from "react-native-image-crop-picker";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const SignUp = (props) => {
@@ -27,7 +29,9 @@ const SignUp = (props) => {
     const [isPasswordSecure, setIsPasswordSecure] = useState(true);
     const [isConfirmPasswordSecure, setConfirmIsPasswordSecure] = useState(true);
 
+
     const [image, setImage] = useState();
+    const [isModalVisible, setModalVisible] = useState(false);
 
     const [checkFirstName, setCheckFirstName] = useState("");
     const [checkLastName, setCheckLastName] = useState("");
@@ -179,21 +183,60 @@ const SignUp = (props) => {
     };
 
     // Function for set Profile Image from 
-    const handleImagePicker = async () => {
-        try {
-            const pickedImage = await ImageCropPicker.openPicker({
-                width: 300,
-                height: 300,
-                cropping: true,
-            });
+    
+    // const handleImagePicker = async () => {
+    //     try {
+    //         const pickedImage = await ImagePicker.openPicker({
+    //             width: 300,
+    //             height: 300,
+    //             cropping: true,
+    //         });
 
-            if (pickedImage) {
-                setImage(pickedImage.path);
+    //         if (pickedImage) {
+    //             setImage(pickedImage.path);
+    //         }
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
+
+    const openImagePicker = async (type) => {
+        try {
+            let image = null;
+            if (type === 'camera') {
+                image = await ImagePicker.openCamera({
+                    width: 300,
+                    height: 400,
+                    cropping: true,
+                });
+            } else {
+                image = await ImagePicker.openPicker({
+                    width: 300,
+                    height: 400,
+                    cropping: true,
+                });
+            }
+            if (image) {
+                setImage(image.path);
+                setModalVisible(false);
             }
         } catch (error) {
             console.log(error);
         }
     };
+
+    // const handleCameraPicker = async () => {
+    //     try {
+    //       const pickedImage = await ImagePicker.openCamera({
+    //         width: 300,
+    //         height: 400,
+    //         cropping: true,
+    //       });
+    //       setImage(pickedImage.path);
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   };
 
     // Function for Data store in Localstorage
     const storeData = async () => {
@@ -304,7 +347,7 @@ const SignUp = (props) => {
                     <Text style={styles.text}> Create Account </Text>
 
 
-                    <TouchableOpacity onPress={handleImagePicker}>
+                    <TouchableOpacity onPress={() => setModalVisible(true)}>
                         {image ? (
                             <Image source={{ uri: image }} style={styles.profileImageStyle} />
                         ) : (
@@ -524,6 +567,22 @@ const SignUp = (props) => {
                             />
                         </TouchableOpacity>
                     </View>
+
+                    <Modal
+                        animationType="slide"
+                        transparent={true}
+                        visible={isModalVisible}
+                        onRequestClose={() => {
+                            setModalVisible(false);
+                        }}>
+                        <View style={styles.modalContainer}>
+                            <View style={styles.modalContent}>
+                                <Button title="Open Camera" onPress={() => openImagePicker('camera')} color={'#4169e1'}  />
+                                <Button title="Open Album" onPress={() => openImagePicker('album')} color={'#4169e1'}/>
+                                <Button title="Cancel" onPress={() => setModalVisible(false)} color={'#4169e1'}/>
+                            </View>
+                        </View>
+                    </Modal>
                 </ScrollView>
             </ImageBackground>
         </View>
@@ -635,6 +694,17 @@ const styles = StyleSheet.create({
         height: 30,
         width: 30,
         tintColor: "white",
+    },
+    modalContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    modalContent: {
+        backgroundColor: 'white',
+        padding: 20,
+        borderRadius: 10,
     },
 });
 
