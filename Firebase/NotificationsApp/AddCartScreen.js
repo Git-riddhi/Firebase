@@ -14,6 +14,9 @@ import { CartData } from "./CartData";
 import HeartOutlineIcon from 'react-native-vector-icons/Ionicons'
 import { HeartIcon } from 'react-native-vector-icons/Ionicons';
 import AppContext from "./AppContext";
+import CartOutlineIcon from 'react-native-vector-icons/Ionicons'
+import AntDesign from "react-native-vector-icons/AntDesign";
+import { Badge } from "react-native-paper";
 
 const screenWidth = Dimensions.get("screen").width;
 const screenHeight = Dimensions.get("screen").height;
@@ -24,8 +27,14 @@ const AddCartScreen = (props) => {
         favorites, setFavorites,
         increaseQuantity,
         decreaseQuantity,
-       
+        updateCartItems,
+        updateFavouriteItems,
+        cartCount, setCartCount,
+        favouriteCount, setFavouriteCount,
+        selectedFavouriteItem,
+        setSelectedFavouriteItem
     } = useContext(AppContext);
+
 
     const renderItem = ({ item, index }) => (
         <View style={styles.innerContainer}>
@@ -40,14 +49,50 @@ const AddCartScreen = (props) => {
 
             <Text style={styles.productNameStyle}>{item.productName}</Text>
 
-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: 30 }}>
                 <Text style={styles.priceStyle}>{item.price}</Text>
 
-                <TouchableOpacity onPress={() => {}}>
-                        <HeartOutlineIcon name="heart-outline" color="#696" size={20} />
-                   
+
+                {/* <TouchableOpacity
+                    onPress={() => {
+                        // Toggle selection and change heart icon color
+                        setSelectedFavouriteItem(item.productName === selectedFavouriteItem ? null : item.productName);
+                    }}
+                >
+                    <HeartOutlineIcon
+                        name={"heart-outline"}
+                        color={item.productName === selectedFavouriteItem ? "red" : "white"}
+                        size={20}
+                    />
+                </TouchableOpacity> */}
+
+                {/* <TouchableOpacity
+                    onPress={() => {
+                        if (selectedItem === null) {
+                            setSelectedItem(item);
+                            updateFavouriteItems(item);
+                            setFavorites(true);
+                        } else if (selectedItem === item) {
+                            setSelectedItem(null);
+                            updateFavouriteItems(item);
+                            setFavorites(false);
+                        }
+                        setFavouriteCount(favouriteCount + (selectedItem ? -1 : 1));
+                    }}
+                >
+                    <HeartOutlineIcon name={selectedItem === item ? "heart" : "heart-outline"} color={selectedItem === item ? "red" : "white"} size={20} />
+                </TouchableOpacity> */}
+
+
+                <TouchableOpacity onPress={() => {
+                    updateFavouriteItems(item);
+                    console.log('favourite item =====>', item);
+                    setFavorites(!favorites)
+                    setFavouriteCount(favouriteCount + 1);
+
+                }}>
+                    <HeartOutlineIcon name={"heart-outline"} color={"white"} size={20} />
                 </TouchableOpacity>
-                {/* <HeartOutlineIcon name="heart-outline" color="#696" size={20} onPress={() => { props.navigation.navigate('Favourites') }} /> */}
 
             </View>
             <View style={styles.wrapperCardBottom}>
@@ -77,7 +122,14 @@ const AddCartScreen = (props) => {
                     height: 30,
                     width: 90,
                 }}
-                onPress={() => props.navigation.navigate('Cart', { cartItems: cartItems })}
+
+                // onPress={() => props.navigation.navigate('Cart', { cartItems: cartItems })}
+                onPress={() => {
+                    updateCartItems(item);
+                    console.log(' selected item----', item);
+                    setCartCount(cartCount + 1);
+                    // props.navigation.navigate('Cart', { cartItems: item });
+                }}
             >
                 <Text
                     style={{
@@ -100,9 +152,52 @@ const AddCartScreen = (props) => {
             style={styles.ImageBackground}
         >
             <View style={styles.container}>
-                <Text style={{ color: "white", fontSize: 20, marginBottom: 20 }}>
-                    Shopping
-                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.navigate('Home');
+                        }}
+                    >
+                        <AntDesign name="arrowleft" size={30} color={"white"} />
+                    </TouchableOpacity>
+                    <Text style={{ color: "white", fontSize: 20 }}>
+                        Shopping
+                    </Text>
+
+                    <View style={{ alignItems: 'center', flexDirection: 'row', width: '30%', justifyContent: 'space-evenly' }}>
+                        <TouchableOpacity onPress={() => {
+                            setFavouriteCount(0)
+                            props.navigation.navigate('Favourites')
+                        }}>
+
+                            <HeartOutlineIcon name="heart-outline" color="white" size={25} />
+
+
+                            <Badge
+                                visible={favouriteCount > 0}
+                                size={20}
+                                style={{ position: 'absolute', bottom: 17, right: -10, backgroundColor: 'green' }}
+                            >
+                                {favouriteCount}
+                            </Badge>
+                        </TouchableOpacity>
+
+                        <CartOutlineIcon name="cart-outline" color={'white'} size={30} onPress={() => {
+                            setCartCount(0)
+                            props.navigation.navigate('Cart')
+                        }} />
+
+                        <Badge
+                            visible={cartCount > 0}
+                            size={20}
+                            style={{ position: 'absolute', bottom: 17, right: 8, backgroundColor: 'green' }}
+                        >
+                            {cartCount}
+                        </Badge>
+
+                    </View>
+
+                </View>
 
                 <FlatList
                     data={CartData}
@@ -119,21 +214,21 @@ const AddCartScreen = (props) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 15,
-        marginTop: 10,
+        marginHorizontal: 17,
+        marginTop: 15,
     },
     ImageBackground: {
         flex: 1,
     },
     innerContainer: {
-        borderWidth: 2,
-        borderColor: "grey",
+        // borderWidth: 2,
+        // borderColor: "grey",
         margin: 5,
         padding: 10,
         alignItems: "center",
-        borderRadius: 20,
+        // borderRadius: 20,
         width: screenWidth / 3 - 20,
-        height: screenHeight / 3.4,
+        height: screenHeight / 3.5,
     },
     wrapperImageCheck: {
         width: 80,
@@ -174,7 +269,18 @@ const styles = StyleSheet.create({
     priceStyle: {
         color: "orange",
         width: 70,
-        height: 25,
+        // height: 25,
     },
+    // badge: {
+    //     position: 'absolute',
+    //     top: 0,
+    //     right: -8,
+    //     backgroundColor: 'green',
+    //     borderRadius: 10,
+    //     width: 20,
+    //     height: 20,
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    // },
 });
 export default AddCartScreen;

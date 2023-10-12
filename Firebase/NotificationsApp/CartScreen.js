@@ -3,52 +3,60 @@ import React, { useContext, useEffect, useState } from 'react';
 import { StyleSheet, ImageBackground, View, Text, TouchableOpacity, Image, FlatList } from 'react-native';
 import { CartData } from './CartData';
 import AppContext from './AppContext';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import AntDesign from "react-native-vector-icons/AntDesign";
+import { useFocusEffect } from '@react-navigation/native';
+
 
 const CartScreen = (props) => {
 
     const {
-        cartItems, setCartItems,
         favorites, setFavorites,
         increaseQuantity,
-        decreaseQuantity
+        decreaseQuantity,
+        selectedItem,
+        removeFromCart
     } = useContext(AppContext);
 
+    console.log('selectedItem====>', selectedItem);
 
     const renderItem = ({ item, index }) => (
+        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+            <View style={styles.innerContainer}>
 
-        <View style={styles.innerContainer}>
+                <View style={styles.wrapperImageCheck}>
 
-            <View style={styles.wrapperImageCheck}>
-                {/* <TouchableOpacity style={styles.button}>
-                    <Text style={styles.iconPlus}>V</Text>
-                </TouchableOpacity> */}
-
-                <Image
-                    source={{
-                        uri: item.image
-                    }}
-                    style={styles.productImage}
-                />
-            </View>
-
-            <View style={{ justifyContent: 'space-between' }}>
-                <View>
-                    <Text style={{ color: 'white' }}>{item.productName}</Text>
-                    <Text style={{ color: 'white' }}>{item.price}</Text>
+                    <Image
+                        source={{
+                            uri: item.image
+                        }}
+                        style={styles.productImage}
+                    />
                 </View>
 
-                <View style={styles.wrapperCardBottom}>
-                    <TouchableOpacity style={styles.button} onPress={() => decreaseQuantity(index)}>
-                        <Text style={{ fontWeight: '600', color: 'white' }}>-</Text>
-                    </TouchableOpacity>
-                    <Text style={{ paddingHorizontal: 12, color: 'white' }}>{item.quantity}</Text>
-                    <TouchableOpacity style={[styles.button, { borderColor: 'white' }]} onPress={() => increaseQuantity(index)}>
-                        <Text style={styles.iconPlus}>+</Text>
-                    </TouchableOpacity>
+                <View style={{ justifyContent: 'space-between', width: '60%' }}>
+                    <View>
+                        <Text style={{ color: 'white' }}>{item.productName}</Text>
+                        <Text style={{ color: 'white' }}>{item.price}</Text>
+                    </View>
+
+                    <View style={styles.wrapperCardBottom}>
+                        <TouchableOpacity style={styles.button} onPress={() => decreaseQuantity(index)}>
+                            <Text style={{ fontWeight: '600', color: 'white' }}>-</Text>
+                        </TouchableOpacity>
+                        <Text style={{ paddingHorizontal: 12, color: 'white' }}>{item.quantity}</Text>
+                        <TouchableOpacity style={[styles.button, { borderColor: 'white' }]} onPress={() => increaseQuantity(index)}>
+                            <Text style={styles.iconPlus}>+</Text>
+                        </TouchableOpacity>
+                    </View>
+
+
                 </View>
-
             </View>
-
+            <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', width: '10%' }}
+            onPress={()=>{removeFromCart(index)}}>
+                <Icon name="delete" size={30} color={'white'} />
+            </TouchableOpacity>
         </View>
     )
 
@@ -59,10 +67,21 @@ const CartScreen = (props) => {
             style={styles.ImageBackground}
         >
             <View style={styles.container}>
-                <Text style={{ color: 'white', fontSize: 20, marginBottom: 20 }}>My Cart</Text>
+
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.navigate('AddToCart');
+                        }}
+                    >
+                        <AntDesign name="arrowleft" size={30} color={"white"} />
+                    </TouchableOpacity>
+                    <Text style={{ color: 'white', fontSize: 20 }}>My Cart</Text>
+                    <View></View>
+                </View>
 
                 <FlatList
-                    data={CartData}
+                    data={selectedItem}
                     renderItem={renderItem}
                     keyExtractor={(item, index) => item + index}
                     ItemSeparatorComponent={
@@ -86,6 +105,7 @@ const styles = StyleSheet.create({
     innerContainer: {
         flexDirection: 'row',
         margin: 10,
+        width: '80%'
     },
     wrapperImageCheck: {
         flexDirection: 'row',
