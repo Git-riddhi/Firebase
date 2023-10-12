@@ -156,11 +156,11 @@ const Home = (props) => {
 
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                     <View style={styles.firstView}>
+                        <Image source={{ uri: image }} style={styles.profileImageStyle} />
                         <View>
                             <Text style={styles.heading}>Hello,</Text>
                             <Text style={styles.heading}>{firstName} {lastName}</Text>
                         </View>
-                        <Image source={{ uri: image }} style={styles.profileImageStyle} />
                     </View>
 
                     <View style={styles.iconsContainer}>
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     },
     heading: {
         color: "white",
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: "bold",
     },
     image: {
@@ -244,9 +244,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     profileImageStyle: {
-        width: 60,
-        height: 60,
-        marginTop: 10,
+        width: 50,
+        height: 50,
+        // marginTop: 10,
+        marginRight:10,
         borderRadius: 30
     },
     logoutView: {
