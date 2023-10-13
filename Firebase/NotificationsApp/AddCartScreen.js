@@ -9,6 +9,7 @@ import {
     Image,
     FlatList,
     Dimensions,
+    Alert,
 } from "react-native";
 import { CartData } from "./CartData";
 import HeartOutlineIcon from 'react-native-vector-icons/Ionicons'
@@ -24,127 +25,112 @@ const screenHeight = Dimensions.get("screen").height;
 const AddCartScreen = (props) => {
     const {
         cartItems, setCartItems,
-        favorites, setFavorites,
         increaseQuantity,
         decreaseQuantity,
         updateCartItems,
         updateFavouriteItems,
         cartCount, setCartCount,
         favouriteCount, setFavouriteCount,
-        selectedFavouriteItem,
-        setSelectedFavouriteItem
+        selectedFavouriteItem, setSelectedFavouriteItem,
+        favouriteItem
     } = useContext(AppContext);
 
+    const RenderItem = ({ item, index }) => {
+        const isFavourite = selectedFavouriteItem.some((dataobj) => dataobj.id === item.id);
 
-    const renderItem = ({ item, index }) => (
-        <View style={styles.innerContainer}>
-            <View style={styles.wrapperImageCheck}>
-                <Image
-                    source={{
-                        uri: item.image,
-                    }}
-                    style={styles.productImage}
-                />
-            </View>
+        return (
 
-            <Text style={styles.productNameStyle}>{item.productName}</Text>
-
-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: 30 }}>
-                <Text style={styles.priceStyle}>{item.price}</Text>
-
-
-                {/* <TouchableOpacity
-                    onPress={() => {
-                        // Toggle selection and change heart icon color
-                        setSelectedFavouriteItem(item.productName === selectedFavouriteItem ? null : item.productName);
-                    }}
-                >
-                    <HeartOutlineIcon
-                        name={"heart-outline"}
-                        color={item.productName === selectedFavouriteItem ? "red" : "white"}
-                        size={20}
+            <View style={styles.innerContainer}>
+                <View style={styles.wrapperImageCheck}>
+                    <Image
+                        source={{
+                            uri: item.image,
+                        }}
+                        style={styles.productImage}
                     />
-                </TouchableOpacity> */}
+                </View>
 
-                {/* <TouchableOpacity
-                    onPress={() => {
-                        if (selectedItem === null) {
-                            setSelectedItem(item);
+                <Text style={styles.productNameStyle}>{item.productName}</Text>
+
+                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: 30 }}>
+                    <Text style={styles.priceStyle}>{item.price}</Text>
+
+                    <TouchableOpacity
+                        onPress={() => {
                             updateFavouriteItems(item);
-                            setFavorites(true);
-                        } else if (selectedItem === item) {
-                            setSelectedItem(null);
-                            updateFavouriteItems(item);
-                            setFavorites(false);
-                        }
-                        setFavouriteCount(favouriteCount + (selectedItem ? -1 : 1));
-                    }}
-                >
-                    <HeartOutlineIcon name={selectedItem === item ? "heart" : "heart-outline"} color={selectedItem === item ? "red" : "white"} size={20} />
-                </TouchableOpacity> */}
+                            console.log('favourite item =====>', item);
+                            setFavouriteCount(favouriteCount + 1);
+                            favouriteItem(item); 
+                        }}
+                    >
+                        <HeartOutlineIcon
+                            name={isFavourite ? "heart" : "heart-outline"}
+                            color={isFavourite ? "red" : "white"}
+                            size={20}
+                        />
+                    </TouchableOpacity>
 
+                    {/* <TouchableOpacity onPress={() => {
+                        updateFavouriteItems(item);
+                        console.log('favourite item =====>', item);
+                        setFavouriteCount(favouriteCount + 1);
 
-                <TouchableOpacity onPress={() => {
-                    updateFavouriteItems(item);
-                    console.log('favourite item =====>', item);
-                    setFavorites(!favorites)
-                    setFavouriteCount(favouriteCount + 1);
+                    }}>
+                        <HeartOutlineIcon name={toggle ? "heart" : "heart-outline"} color={"white"} size={20} />
+                    </TouchableOpacity> */}
 
-                }}>
-                    <HeartOutlineIcon name={"heart-outline"} color={"white"} size={20} />
-                </TouchableOpacity>
-
-            </View>
-            <View style={styles.wrapperCardBottom}>
+                </View>
+                <View style={styles.wrapperCardBottom}>
+                    <TouchableOpacity
+                        style={styles.button}
+                        onPress={() => decreaseQuantity(index)}
+                    >
+                        <Text style={{ fontWeight: "600", color: "white" }}>-</Text>
+                    </TouchableOpacity>
+                    <Text style={{ paddingHorizontal: 12, color: "white" }}>
+                        {item.quantity}
+                    </Text>
+                    <TouchableOpacity
+                        style={styles.button}
+                        onPress={() => increaseQuantity(index)}
+                    >
+                        <Text style={styles.iconPlus}>+</Text>
+                    </TouchableOpacity>
+                </View>
                 <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => decreaseQuantity(index)}
-                >
-                    <Text style={{ fontWeight: "600", color: "white" }}>-</Text>
-                </TouchableOpacity>
-                <Text style={{ paddingHorizontal: 12, color: "white" }}>
-                    {item.quantity}
-                </Text>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => increaseQuantity(index)}
-                >
-                    <Text style={styles.iconPlus}>+</Text>
-                </TouchableOpacity>
-            </View>
-            <TouchableOpacity
-                style={{
-                    marginTop: 7,
-                    backgroundColor: "#e9967a",
-                    padding: 5,
-                    borderRadius: 5,
-                    marginBottom: 10,
-                    height: 30,
-                    width: 90,
-                }}
-
-                // onPress={() => props.navigation.navigate('Cart', { cartItems: cartItems })}
-                onPress={() => {
-                    updateCartItems(item);
-                    console.log(' selected item----', item);
-                    setCartCount(cartCount + 1);
-                    // props.navigation.navigate('Cart', { cartItems: item });
-                }}
-            >
-                <Text
                     style={{
-                        fontSize: 13,
-                        color: "black",
-                        fontWeight: "bold",
-                        textAlign: "center",
+                        marginTop: 7,
+                        backgroundColor: "#e9967a",
+                        padding: 5,
+                        borderRadius: 5,
+                        marginBottom: 10,
+                        height: 30,
+                        width: 90,
+                    }}
+                    onPress={() => {
+                        updateCartItems(item);
+                        const array = [...cartItems];
+                        array.splice(index, 1);
+                        console.log("newArray without deleted item ===>", array);
+                        // OR --- let newArray = cartItems.filter(element => element !== item);
+                        setCartCount(cartCount + 1);
+                        setCartItems(array)
                     }}
                 >
-                    Add To Cart
-                </Text>
-            </TouchableOpacity>
-        </View>
-    );
-
+                    <Text
+                        style={{
+                            fontSize: 13,
+                            color: "black",
+                            fontWeight: "bold",
+                            textAlign: "center",
+                        }}
+                    >
+                        Add To Cart
+                    </Text>
+                </TouchableOpacity>
+            </View>
+        )
+    }
     return (
         <ImageBackground
             source={require("../../assets/background.png")}
@@ -165,43 +151,53 @@ const AddCartScreen = (props) => {
                     </Text>
 
                     <View style={{ alignItems: 'center', flexDirection: 'row', width: '30%', justifyContent: 'space-evenly' }}>
-                        <TouchableOpacity onPress={() => {
-                            setFavouriteCount(0)
-                            props.navigation.navigate('Favourites')
-                        }}>
-
-                            <HeartOutlineIcon name="heart-outline" color="white" size={25} />
-
+                        <View>
+                            {favouriteCount > 0
+                                ?
+                                <HeartOutlineIcon name="heart-outline" color="white" size={25} onPress={() => {
+                                    // setFavouriteCount(0)
+                                    props.navigation.navigate('Favourites')
+                                }} />
+                                :
+                                <View></View>
+                            }
 
                             <Badge
                                 visible={favouriteCount > 0}
                                 size={20}
-                                style={{ position: 'absolute', bottom: 17, right: -10, backgroundColor: 'green' }}
+                                style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
                             >
                                 {favouriteCount}
                             </Badge>
-                        </TouchableOpacity>
+                        </View>
 
-                        <CartOutlineIcon name="cart-outline" color={'white'} size={30} onPress={() => {
-                            setCartCount(0)
-                            props.navigation.navigate('Cart')
-                        }} />
-
-                        <Badge
-                            visible={cartCount > 0}
-                            size={20}
-                            style={{ position: 'absolute', bottom: 17, right: 8, backgroundColor: 'green' }}
-                        >
-                            {cartCount}
-                        </Badge>
+                        <View>
+                            {cartCount > 0
+                                ?
+                                <CartOutlineIcon name="cart-outline" color={'white'} size={30} onPress={() => {
+                                    setCartCount(0)
+                                    props.navigation.navigate('Cart')
+                                }} />
+                                :
+                                <View></View>
+                            }
+                            <Badge
+                                visible={cartCount > 0}
+                                size={20}
+                                style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
+                            >
+                                {cartCount}
+                            </Badge>
+                        </View>
 
                     </View>
 
                 </View>
 
                 <FlatList
-                    data={CartData}
-                    renderItem={renderItem}
+                    data={cartItems}
+                    // renderItem={renderItem}
+                    renderItem={({ item, index }) => <RenderItem item={item} index={index} />}
                     keyExtractor={(item, index) => item + index}
                     ItemSeparatorComponent={<View style={{ width: 10, height: 10 }} />}
                     showsVerticalScrollIndicator={false}

@@ -25,7 +25,6 @@ export const AppProvider = ({ children }) => {
     const [favouriteCount, setFavouriteCount] = useState(0);
 
 
-
     const increaseQuantity = (index) => {
         const updatedCartItems = [...cartItems];
         updatedCartItems[index].quantity += 1;
@@ -43,14 +42,14 @@ export const AppProvider = ({ children }) => {
     const updateCartItems = (item) => {
         console.log("...selectedItem, item", ...selectedItem, item);
         setSelectedItem([...selectedItem, item])
-
     };
 
-    const updateFavouriteItems =(item)=>{
+    const updateFavouriteItems = (item) => {
         console.log("selected total favouriteItem ====>", ...selectedFavouriteItem, item);
         setSelectedFavouriteItem([...selectedFavouriteItem, item])
-    }
+        console.log('selected item id', selectedFavouriteItem,  item.id);
 
+    }
 
     const removeFromCart = (index) => {
         Alert.alert("", `Do You want to remove the item from cart?`, [
@@ -59,8 +58,7 @@ export const AppProvider = ({ children }) => {
                 onPress: () => {
                     const array = [...selectedItem];
                     console.log("array :", array);
-                    const deletedarray = array.splice(index, 1);
-                    // console.log("deletearray :", deletedarray)
+                    array.splice(index, 1);
                     setSelectedItem(array);
                 },
             },
@@ -84,6 +82,23 @@ export const AppProvider = ({ children }) => {
             { text: "No", onPress: () => console.log("Okay"), style: "cancel" },
         ]);
     };
+
+    const favouriteItem = (item) => {
+        const isFavourite = selectedFavouriteItem.some((dataobj) => dataobj.id === item.id);
+        // console.log('isFavourite====', isFavourite);
+
+        if (isFavourite) {
+            const updatedValue = selectedFavouriteItem.filter((dataobj) => dataobj.id !== item.id);
+            setSelectedFavouriteItem(updatedValue);
+            setFavouriteCount(favouriteCount - 1);
+        } else {
+            const updatedValue = [...selectedFavouriteItem, item];
+            setSelectedFavouriteItem(updatedValue);
+            setFavouriteCount(favouriteCount + 1);
+        }
+    };
+
+
 
     const contextPayload = useMemo(() => ({
 
@@ -112,7 +127,8 @@ export const AppProvider = ({ children }) => {
         updateCartItems,
         removeFromCart,
         updateFavouriteItems,
-        removeFromFavourites
+        removeFromFavourites,
+        favouriteItem,
 
 
 
@@ -143,7 +159,8 @@ export const AppProvider = ({ children }) => {
         updateCartItems,
         removeFromCart,
         updateFavouriteItems,
-        removeFromFavourites
+        removeFromFavourites,
+        favouriteItem
 
     ])
 

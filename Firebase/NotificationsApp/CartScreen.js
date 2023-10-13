@@ -54,7 +54,7 @@ const CartScreen = (props) => {
                 </View>
             </View>
             <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', width: '10%' }}
-            onPress={()=>{removeFromCart(index)}}>
+                onPress={() => { removeFromCart(index) }}>
                 <Icon name="delete" size={30} color={'white'} />
             </TouchableOpacity>
         </View>
@@ -66,30 +66,55 @@ const CartScreen = (props) => {
             resizeMode="cover"
             style={styles.ImageBackground}
         >
-            <View style={styles.container}>
 
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            props.navigation.navigate('AddToCart');
-                        }}
-                    >
-                        <AntDesign name="arrowleft" size={30} color={"white"} />
-                    </TouchableOpacity>
-                    <Text style={{ color: 'white', fontSize: 20 }}>My Cart</Text>
-                    <View></View>
+            {selectedItem.length > 0 ?
+                <View style={styles.container}>
+
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate('AddToCart');
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ color: 'white', fontSize: 20 }}>My Cart</Text>
+                        <View></View>
+                    </View>
+
+                    <FlatList
+                        data={selectedItem}
+                        renderItem={renderItem}
+                        keyExtractor={(item, index) => item + index}
+                        ItemSeparatorComponent={
+                            <View style={styles.itemSeparatorComponentStyle} />
+                        }
+                        showsVerticalScrollIndicator={false}
+                    />
                 </View>
+                :
 
-                <FlatList
-                    data={selectedItem}
-                    renderItem={renderItem}
-                    keyExtractor={(item, index) => item + index}
-                    ItemSeparatorComponent={
-                        <View style={styles.itemSeparatorComponentStyle} />
-                    }
-                    showsVerticalScrollIndicator={false}
-                />
-            </View>
+                <View style={styles.container}>
+
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate('AddToCart');
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ color: 'white', fontSize: 20 }}>My Cart</Text>
+                        <View></View>
+                    </View>
+                    <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 300 }}>
+
+                        <Text style={styles.emptyText}>There is nothing in your cart.</Text>
+                        <Text style={styles.emptyText}>Let's Add some Items.</Text>
+
+                    </View>
+                </View>
+            }
         </ImageBackground>
 
     );
@@ -98,6 +123,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         margin: 15
+    },
+    emptyText: {
+        fontSize: 15,
+        color: 'white',
+        justifyContent: 'center',
     },
     ImageBackground: {
         flex: 1,
