@@ -13,7 +13,7 @@ const Favourites = (props) => {
     const {
         increaseQuantity,
         decreaseQuantity,
-        selectedFavouriteItem, 
+        selectedFavouriteItem,
         removeFromFavourites
     } = useContext(AppContext);
 
@@ -53,7 +53,7 @@ const Favourites = (props) => {
                 </View>
             </View>
             <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', width: '10%' }}
-            onPress={()=>{removeFromFavourites(index)}}>
+                onPress={() => { removeFromFavourites(index) }}>
                 <Icon name="delete" size={30} color={'white'} />
             </TouchableOpacity>
         </View>
@@ -65,30 +65,55 @@ const Favourites = (props) => {
             resizeMode="cover"
             style={styles.ImageBackground}
         >
-            <View style={styles.container}>
+            {selectedFavouriteItem.length > 0 ?
+                <View style={styles.container}>
 
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            props.navigation.navigate('AddToCart');
-                        }}
-                    >
-                        <AntDesign name="arrowleft" size={30} color={"white"} />
-                    </TouchableOpacity>
-                    <Text style={{ color: 'white', fontSize: 20 }}>Favourites</Text>
-                    <View></View>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate('AddToCart');
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ color: 'white', fontSize: 20 }}>Favourites</Text>
+                        <View></View>
+                    </View>
+
+                    <FlatList
+                        data={selectedFavouriteItem}
+                        renderItem={renderItem}
+                        keyExtractor={(item, index) => item + index}
+                        ItemSeparatorComponent={
+                            <View style={styles.itemSeparatorComponentStyle} />
+                        }
+                        showsVerticalScrollIndicator={false}
+                    />
                 </View>
+                :
 
-                <FlatList
-                    data={selectedFavouriteItem}
-                    renderItem={renderItem}
-                    keyExtractor={(item, index) => item + index}
-                    ItemSeparatorComponent={
-                        <View style={styles.itemSeparatorComponentStyle} />
-                    }
-                    showsVerticalScrollIndicator={false}
-                />
-            </View>
+
+                <View style={styles.container}>
+
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate('AddToCart');
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ color: 'white', fontSize: 20 }}>Favourites</Text>
+                        <View></View>
+                    </View>
+                    <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 300 }}>
+
+                        <Text style={styles.emptyText}>There is nothing in your favourite list.</Text>
+                        <Text style={styles.emptyText}>Add some Items.</Text>
+
+                    </View>
+                </View>
+            }
         </ImageBackground>
 
     );
@@ -97,6 +122,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         margin: 15
+    },
+    emptyContainer: {
+        margin: 15
+    },
+    emptyText: {
+        fontSize: 15,
+        color: 'white',
+        justifyContent: 'center',
     },
     ImageBackground: {
         flex: 1,
