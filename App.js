@@ -1,23 +1,20 @@
-// App.js
-
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Screen1 from './Firebase/NotificationsApp/Screen1';
-import Screen2 from './Firebase/NotificationsApp/Screen2';
-
-
-
-const Stack = createStackNavigator();
+import React, { useEffect } from 'react';
+import { Text, View } from 'react-native'
+import Navigators from './Firebase/NotificationsApp/Navigators';
+import { AppProvider } from './Firebase/NotificationsApp/AppContext';
 
 const App = () => {
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Screen1" screenOptions={{headerShown:false}} >
-        <Stack.Screen name="Screen1" component={Screen1} />
-        <Stack.Screen name="Screen2" component={Screen2} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <AppProvider>
+
+      <View style={{ flex: 1 }}>
+
+        <Navigators />
+
+      </View>
+    </AppProvider>
+
   );
 };
 

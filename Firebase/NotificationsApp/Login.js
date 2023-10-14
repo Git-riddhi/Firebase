@@ -97,13 +97,13 @@ const Login = (props) => {
             email: email,
             password: password,
         };
-        console.log("loginObj.email ===>", loginObj.email);
+        // console.log("loginObj.email ===>", loginObj.email);
 
         const existingEmail = getItem.filter((item) => {
             const oldEmail = item.email;
             const oldPassword = item.password;
 
-            console.log(oldEmail, oldPassword, "=======> oldEmail, oldPassword");
+            // console.log(oldEmail, oldPassword, "=======> oldEmail, oldPassword");
 
             if (oldEmail == loginObj.email && oldPassword == loginObj.password) {
                 console.log("condition true");
