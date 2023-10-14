@@ -11,7 +11,7 @@ const Splash = (props) => {
 
     const getData = async () => {
         const getItem = await AsyncStorage.getItem('Loginkey')
-        console.log("splash get item login key  ==else==>", getItem);
+        // console.log("splash get item login key  ==else==>", getItem);
 
         if (getItem === null) {
             console.log("yes null");

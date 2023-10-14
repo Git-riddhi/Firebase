@@ -18,6 +18,7 @@ import AppContext from "./AppContext";
 import CartOutlineIcon from 'react-native-vector-icons/Ionicons'
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { Badge } from "react-native-paper";
+import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 
 const screenWidth = Dimensions.get("screen").width;
 const screenHeight = Dimensions.get("screen").height;
@@ -60,7 +61,7 @@ const AddCartScreen = (props) => {
                             updateFavouriteItems(item);
                             console.log('favourite item =====>', item);
                             setFavouriteCount(favouriteCount + 1);
-                            favouriteItem(item); 
+                            favouriteItem(item);
                         }}
                     >
                         <HeartOutlineIcon
@@ -131,86 +132,111 @@ const AddCartScreen = (props) => {
             </View>
         )
     }
+
+
+    const slideAnimation = useSharedValue(screenWidth);
+
+    const slideInAnimation = () => {
+        slideAnimation.value = withTiming(0, { duration: 300 });
+    };
+
+    const slideOutAnimation = () => {
+        slideAnimation.value = withTiming(screenWidth, { duration: 300 });
+    };
+
+    useEffect(() => {
+        // Slide in animation when the component mounts
+        slideInAnimation();
+
+        // // Clean up slide animation when component unmounts
+        // return () => {
+        //     slideOutAnimation();
+        // };
+    }, []);
+
+
     return (
-        <ImageBackground
-            source={require("../../assets/background.png")}
-            resizeMode="cover"
-            style={styles.ImageBackground}
-        >
-            <View style={styles.container}>
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            props.navigation.navigate('Home');
-                        }}
-                    >
-                        <AntDesign name="arrowleft" size={30} color={"white"} />
-                    </TouchableOpacity>
-                    <Text style={{ color: "white", fontSize: 20 }}>
-                        Shopping
-                    </Text>
+        <Animated.View style={[styles.container, { transform: [{ translateX: slideAnimation.value }] }]}>
+            <ImageBackground
+                source={require("../../assets/background.png")}
+                resizeMode="cover"
+                style={styles.ImageBackground}
+            >
+                <View style={styles.container}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate('Home');
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ color: "white", fontSize: 20 }}>
+                            Shopping
+                        </Text>
 
-                    <View style={{ alignItems: 'center', flexDirection: 'row', width: '30%', justifyContent: 'space-evenly' }}>
-                        <View>
-                            {favouriteCount > 0
-                                ?
-                                <HeartOutlineIcon name="heart-outline" color="white" size={25} onPress={() => {
-                                    // setFavouriteCount(0)
-                                    props.navigation.navigate('Favourites')
-                                }} />
-                                :
-                                <View></View>
-                            }
+                        <View style={{ alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 15, }}>
+                            <View>
+                                {favouriteCount > 0
+                                    ?
+                                    <HeartOutlineIcon name="heart-outline" color="white" size={25} onPress={() => {
+                                        // setFavouriteCount(0)
+                                        props.navigation.navigate('Favourites')
+                                    }} />
+                                    :
+                                    <View></View>
+                                }
 
-                            <Badge
-                                visible={favouriteCount > 0}
-                                size={20}
-                                style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
-                            >
-                                {favouriteCount}
-                            </Badge>
-                        </View>
+                                <Badge
+                                    visible={favouriteCount > 0}
+                                    size={20}
+                                    style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
+                                >
+                                    {favouriteCount}
+                                </Badge>
+                            </View>
 
-                        <View>
-                            {cartCount > 0
-                                ?
-                                <CartOutlineIcon name="cart-outline" color={'white'} size={30} onPress={() => {
-                                    setCartCount(0)
-                                    props.navigation.navigate('Cart')
-                                }} />
-                                :
-                                <View></View>
-                            }
-                            <Badge
-                                visible={cartCount > 0}
-                                size={20}
-                                style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
-                            >
-                                {cartCount}
-                            </Badge>
+                            <View style={{ marginLeft: 8 }}>
+                                {cartCount > 0
+                                    ?
+                                    <CartOutlineIcon name="cart-outline" color={'white'} size={30} onPress={() => {
+                                        setCartCount(0)
+                                        props.navigation.navigate('Cart')
+                                    }} />
+                                    :
+                                    <View></View>
+                                }
+                                <Badge
+                                    visible={cartCount > 0}
+                                    size={20}
+                                    style={{ position: 'absolute', bottom: 17, right: -8, backgroundColor: 'green' }}
+                                >
+                                    {cartCount}
+                                </Badge>
+                            </View>
+
                         </View>
 
                     </View>
 
+                    <FlatList
+                        data={cartItems}
+                        // renderItem={renderItem}
+                        renderItem={({ item, index }) => <RenderItem item={item} index={index} />}
+                        keyExtractor={(item, index) => item + index}
+                        ItemSeparatorComponent={<View style={{ width: 10, height: 10 }} />}
+                        showsVerticalScrollIndicator={false}
+                        numColumns={3}
+                    />
                 </View>
-
-                <FlatList
-                    data={cartItems}
-                    // renderItem={renderItem}
-                    renderItem={({ item, index }) => <RenderItem item={item} index={index} />}
-                    keyExtractor={(item, index) => item + index}
-                    ItemSeparatorComponent={<View style={{ width: 10, height: 10 }} />}
-                    showsVerticalScrollIndicator={false}
-                    numColumns={3}
-                />
-            </View>
-        </ImageBackground>
+            </ImageBackground>
+         </Animated.View>
     );
 };
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 17,
+        marginHorizontal: 15,
         marginTop: 15,
     },
     ImageBackground: {
