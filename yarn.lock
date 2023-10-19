@@ -6667,10 +6667,10 @@
     "lodash" "^4.17.21"
     "prop-types" "^15.7.2"
 
-"react-native-google-places-autocomplete@^2.5.1":
-  "integrity" "sha512-2FZZomogB18mLSC/N39UcpiVoJn/fFIpud1M2KZMom/pJhSMgfqV4qLjHuzaDyYIl7KBz/zpGDcbYgmtvvpkHQ=="
-  "resolved" "https://registry.npmjs.org/react-native-google-places-autocomplete/-/react-native-google-places-autocomplete-2.5.1.tgz"
-  "version" "2.5.1"
+"react-native-google-places-autocomplete@^2.5.6":
+  "integrity" "sha512-Dy7mFKyEoiNeWPLd7HUkrI/SzJYe7GST55FGtiXzXDoPs05LYHIOCPrT9qFE51COh5X8kgDKm+f7D5aMY/aMbg=="
+  "resolved" "https://registry.npmjs.org/react-native-google-places-autocomplete/-/react-native-google-places-autocomplete-2.5.6.tgz"
+  "version" "2.5.6"
   dependencies:
     "lodash.debounce" "^4.0.8"
     "prop-types" "^15.7.2"
@@ -6699,10 +6699,10 @@
     "lodash.isequal" "^4.5.0"
     "prop-types" "^15.6.0"
 
-"react-native-maps@^1.7.1", "react-native-maps@>=1.0.0":
-  "integrity" "sha512-CHVLzL+Q2jiUGgbt4/vosxVI1SukWyaLGjD62VLgR/wZpnH4Umi9ql1bmKDPWcfj2C1QZwMU0Yc7rXTbvZUIiw=="
-  "resolved" "https://registry.npmjs.org/react-native-maps/-/react-native-maps-1.7.1.tgz"
-  "version" "1.7.1"
+"react-native-maps@^1.8.0", "react-native-maps@>=1.0.0":
+  "integrity" "sha512-KfVZ03L42+a22Fkcl2uDe5d+73BweTlcRUzm2G+aQUJ7fHrBxj7CuXWtKMSNpVDiO3YDCWcshiiyjSXxkd/qOw=="
+  "resolved" "https://registry.npmjs.org/react-native-maps/-/react-native-maps-1.8.0.tgz"
+  "version" "1.8.0"
   dependencies:
     "@types/geojson" "^7946.0.10"
 

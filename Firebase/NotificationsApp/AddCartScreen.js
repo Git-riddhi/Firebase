@@ -18,7 +18,6 @@ import AppContext from "./AppContext";
 import CartOutlineIcon from 'react-native-vector-icons/Ionicons'
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { Badge } from "react-native-paper";
-import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 
 const screenWidth = Dimensions.get("screen").width;
 const screenHeight = Dimensions.get("screen").height;
@@ -134,29 +133,8 @@ const AddCartScreen = (props) => {
     }
 
 
-    const slideAnimation = useSharedValue(screenWidth);
-
-    const slideInAnimation = () => {
-        slideAnimation.value = withTiming(0, { duration: 300 });
-    };
-
-    const slideOutAnimation = () => {
-        slideAnimation.value = withTiming(screenWidth, { duration: 300 });
-    };
-
-    useEffect(() => {
-        // Slide in animation when the component mounts
-        slideInAnimation();
-
-        // // Clean up slide animation when component unmounts
-        // return () => {
-        //     slideOutAnimation();
-        // };
-    }, []);
-
 
     return (
-        <Animated.View style={[styles.container, { transform: [{ translateX: slideAnimation.value }] }]}>
             <ImageBackground
                 source={require("../../assets/background.png")}
                 resizeMode="cover"
@@ -230,7 +208,6 @@ const AddCartScreen = (props) => {
                     />
                 </View>
             </ImageBackground>
-         </Animated.View>
     );
 };
 const styles = StyleSheet.create({
