@@ -123,7 +123,9 @@ const Login = (props) => {
             setPassword("");
             setLoading(false);
         } else {
+            setLoading(false);
             Alert.alert("Invalid credentials. Please try again.");
+
         }
     };
 

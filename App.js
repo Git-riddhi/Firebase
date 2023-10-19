@@ -1,19 +1,12 @@
-import React, { useEffect } from 'react';
-import { Text, View } from 'react-native'
-import Navigators from './Firebase/NotificationsApp/Navigators';
-import { AppProvider } from './Firebase/NotificationsApp/AppContext';
+import React from 'react';
+import ChooseLocation from './Firebase/GoogleMap/ChooseLocation';
+import { View } from 'react-native';
+import StackNavigatorScreen from './Firebase/Tracking/StackNavigator';
 
 const App = () => {
-
   return (
-    <AppProvider>
 
-      <View style={{ flex: 1 }}>
-
-        <Navigators />
-
-      </View>
-    </AppProvider>
+    <StackNavigatorScreen />
 
   );
 };
