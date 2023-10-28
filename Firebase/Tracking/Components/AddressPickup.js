@@ -11,7 +11,7 @@ const AddressPickup = ({
 }) => {
 
     const onPressAddress = (data, details) => {
-        // console.log("details==>>>>", details)
+        console.log('details', details);
 
         let resLength = details.address_components
         let zipCode = ''
@@ -38,8 +38,8 @@ const AddressPickup = ({
                 ? dataTextCityObj.short_name
                 : dataTextCityObj.long_name;
 
-        // console.log("zip cod found", zipCode)
-        // console.log("city namte", cityText)
+        console.log("zip cod found", zipCode)
+        console.log("city namte", cityText)
 
         const lat = details.geometry.location.lat
         const lng = details.geometry.location.lng
@@ -53,7 +53,7 @@ const AddressPickup = ({
                 onPress={onPressAddress}
                 fetchDetails={true}
                 renderDescription={row => row.description|| row.formatted_address || row.name} // custom description render
-              
+                onFail={error => console.log("error ====>", error)}
                 query={{
                     key: GOOGLE_MAP_KEY,
                     language: 'en'
