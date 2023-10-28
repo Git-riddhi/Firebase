@@ -44,7 +44,7 @@ const  PhoneSignIn =()=> {
     return (
       <Button
         title="Phone Number Sign In"
-        onPress={() => signInWithPhoneNumber('+91 8200694338')}
+        onPress={() => signInWithPhoneNumber('+1 650-555-3434')}
       />
     );
   }

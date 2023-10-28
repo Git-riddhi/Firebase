@@ -67,9 +67,10 @@ const HomeScreen = ({ navigation }) => {
                             fontSize: 20,
                             textAlign: "center",
                             marginBottom: 16,
+                            fontWeight: 'bold'
                         }}
                     >
-                        Firebase Auth
+                        Firebase Authentication
                     </Text>
                     {user ? (
                         <Text>
@@ -89,24 +90,7 @@ const HomeScreen = ({ navigation }) => {
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <Text
-                    style={{
-                        fontSize: 18,
-                        textAlign: "center",
-                        color: "grey",
-                    }}
-                >
-                    React Native Firebase Authentication
-                </Text>
-                {/* <Text
-          style={{
-            fontSize: 16,
-            textAlign: "center",
-            color: "grey",
-          }}
-        >
-          www.aboutreact.com
-        </Text> */}
+
             </View>
         </SafeAreaView>
     );
