@@ -1,13 +1,10 @@
 import React from 'react';
-import ChooseLocation from './Firebase/GoogleMap/ChooseLocation';
-import { View } from 'react-native';
-import StackNavigatorScreen from './Firebase/Tracking/StackNavigator';
+import PhoneSignIn from './Firebase/OTPVerification/PhoneSignIn';
 
 const App = () => {
   return (
 
-    <StackNavigatorScreen />
-
+    <PhoneSignIn/>
   );
 };
 

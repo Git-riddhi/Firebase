@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 const SimpleMap = () => {
@@ -9,9 +9,6 @@ const SimpleMap = () => {
       <MapView
         style={styles.mapStyle}
         provider={PROVIDER_GOOGLE}
-        // showsUserLocation={false}
-        // followUserLocation={false}
-        //   zoomEnabled={true}
         initialRegion={{
           latitude: 37.78825,
           longitude: -122.4324,
@@ -25,9 +22,9 @@ const SimpleMap = () => {
             latitude: 37.78825,
             longitude: -122.4324,
           }}
-          onDragEnd={
-            (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
-          }
+          // onDragEnd={
+          //   (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+          // }
           title={'Test Marker'}
           description={'This is a description of the marker'}
         />
@@ -39,20 +36,11 @@ const SimpleMap = () => {
 
 export default SimpleMap;
 
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    // width: '100%',
-    // height: '100%',
+    flex: 1
   },
   mapStyle: {
-    ...StyleSheet.absoluteFillObject,
-    // position:'absolute',
-    // top:0,
-    // right:0,
-    // left:0,
-    // bottom:0
-
+    ...StyleSheet.absoluteFillObject
   },
 });

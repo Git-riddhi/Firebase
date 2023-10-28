@@ -3,7 +3,8 @@ import { View, StyleSheet, PermissionsAndroid, Platform } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
 
-const MapScreen = () => {
+
+const SimpleMapScreen = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
   // const [currentLatitude, setCurrentLatitude] = useState(0)
   // const [currentLongitude, setCurrentLongitude] = useState(0)
@@ -90,4 +91,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MapScreen;
+export default SimpleMapScreen;
