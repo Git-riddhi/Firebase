@@ -173,6 +173,8 @@ const Login = (props) => {
                     )}
                 </View>
 
+
+
                 <View style={styles.Login}>
                     <TouchableOpacity onPress={() => {
                         if (Login()) {
@@ -184,6 +186,14 @@ const Login = (props) => {
 
                     </TouchableOpacity>
                 </View>
+
+                <TouchableOpacity onPress={() => {
+                    console.log('forgotpassword.....')
+                    // props.navigation.navigate('ForgotPassword')
+                }
+                }>
+                    <Text style={styles.forgotButtonText}> Forgot Password ? </Text>
+                </TouchableOpacity>
 
                 <View style={styles.SignUp}>
                     <Text style={styles.footerText}>Or create account</Text>
@@ -311,6 +321,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent background
     },
+    forgotButtonText: {
+        fontSize: 15,
+        color: 'white', textAlign: 'center',
+        marginTop: 15
+    }
 });
 
 export default Login;
