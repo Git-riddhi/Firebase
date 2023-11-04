@@ -16,51 +16,51 @@ import {
     KeyboardAvoidingView,
     Alert,
 } from "react-native";
-
+import AntDesign from "react-native-vector-icons/AntDesign";
 import auth from "@react-native-firebase/auth";
 
 const ForgotPasswordScreen = ({ navigation }) => {
     const [userEmail, setUserEmail] = useState("");
-    const [userPassword, setUserPassword] = useState("");
-    const [errortext, setErrortext] = useState("");
+    // const [userPassword, setUserPassword] = useState("");
+    // const [errortext, setErrortext] = useState("");
 
     const passwordInputRef = createRef();
 
-    const handleSubmitPress = () => {
-        setErrortext("");
-        if (!userEmail) {
-            Alert.alert("Please fill Email");
-            return;
-        }
-        if (!userPassword) {
-            Alert.alert("Please fill Password");
-            return;
-        }
-        auth()
-            .signInWithEmailAndPassword(userEmail, userPassword)
-            .then((user) => {
-                console.log(user);
-                // If server response message same as Data Matched
-                if (user) navigation.replace("HomeScreen");
-            })
-            .catch((error) => {
-                console.log(error);
-                if (error.code === "auth/invalid-email")
-                    setErrortext(error.message);
-                else if (error.code === "auth/user-not-found")
-                    setErrortext("No User Found");
-                else {
-                    setErrortext(
-                        "Please check your email id or password"
-                    );
-                }
-            });
-    };
+    // const handleSubmitPress = () => {
+    //     setErrortext("");
+    //     if (!userEmail) {
+    //         Alert.alert("Please fill Email");
+    //         return;
+    //     }
+    //     if (!userPassword) {
+    //         Alert.alert("Please fill Password");
+    //         return;
+    //     }
+    //     auth()
+    //         .signInWithEmailAndPassword(userEmail, userPassword)
+    //         .then((user) => {
+    //             console.log(user);
+    //             // If server response message same as Data Matched
+    //             if (user) navigation.replace("HomeScreen");
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+    //             if (error.code === "auth/invalid-email")
+    //                 setErrortext(error.message);
+    //             else if (error.code === "auth/user-not-found")
+    //                 setErrortext("No User Found");
+    //             else {
+    //                 setErrortext(
+    //                     "Please check your email id or password"
+    //                 );
+    //             }
+    //         });
+    // };
 
     const resetPassword = () => {
         if (userEmail !== "") {
             auth()
-                .sendPasswordResetEmail(userEmail)
+                .sendPasswodResetEmail(userEmail)
                 .then(() => {
                     Alert.alert("Password reset email has been sent successfully.");
                     navigation.navigate('Login')
@@ -83,15 +83,25 @@ const ForgotPasswordScreen = ({ navigation }) => {
                     flex: 1
                 }}
             >
-                <View style={{alignItems:'center'}}> 
+                <View style={{ alignItems: 'center' }}>
                     <KeyboardAvoidingView enabled>
-                        <View >
-                            <Text style={{ fontSize: 20, color: 'white', fontWeight:'bold',marginBottom:60, textAlign:'center' }}>
+
+                        <View style={{ marginHorizontal:15,marginBottom:40,flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }} >
+
+                            <TouchableOpacity
+                                onPress={() => {
+                                    navigation.goBack();
+                                }}
+                            >
+                                <AntDesign name="arrowleft" size={30} color={"white"} />
+                            </TouchableOpacity>
+                            <Text style={{ fontSize: 17, color: 'white', fontWeight: 'bold' }}>
                                 FORGOT PASSWORD
                             </Text>
+                            <View></View>
                         </View>
 
-                        <Text style={{ fontSize: 14, color: 'white', textAlign:'center' }}>
+                        <Text style={{ fontSize: 14, color: 'white', textAlign: 'center' }}>
                             Enter your email address to reset your password.
                         </Text>
 
@@ -139,16 +149,16 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#307ecc",
         alignContent: "center",
-        paddingTop:30
+        paddingTop: 30
     },
     sectionStyle: {
         flexDirection: "row",
         height: 40,
-        width:'85%',
+        width: '85%',
         marginTop: 30,
         marginHorizontal: 35,
     },
-   
+
     buttonStyle: {
         backgroundColor: "#7DE24E",
         borderWidth: 0,
@@ -164,7 +174,7 @@ const styles = StyleSheet.create({
         color: "#FFFFFF",
         paddingVertical: 10,
         fontSize: 16,
-        fontWeight:'bold'
+        fontWeight: 'bold'
     },
     inputStyle: {
         flex: 1,
