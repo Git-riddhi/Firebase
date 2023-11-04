@@ -1,12 +1,11 @@
 import React from 'react';
-import PhoneSignIn from './Firebase/OTPVerification/PhoneSignIn';
-import Navigators from './Firebase/NotificationsApp/Navigators';
-import AuthNavigator from './Firebase/EmailPassword/AuthNavigator';
+import SaveContact from './Firebase/SaveContactUsingPushnotification/SaveContact';
+import SaveContactWithoutNotification from './Firebase/SaveContactUsingPushnotification/SaveContactWithoutNotification';
 
 const App = () => {
   return (
 
-    <AuthNavigator/>
+    <SaveContactWithoutNotification/>
   );
 };
 

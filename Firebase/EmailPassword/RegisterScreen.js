@@ -11,6 +11,7 @@ import {
     TouchableOpacity,
     ScrollView,
 } from "react-native";
+import AntDesign from "react-native-vector-icons/AntDesign";
 
 import auth from "@react-native-firebase/auth";
 
@@ -67,16 +68,31 @@ const RegisterScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView
-            style={{ flex: 1, backgroundColor: "#307ecc", paddingTop:20}}
+            style={{ flex: 1, backgroundColor: "#307ecc", paddingTop: 20 }}
         >
             <ScrollView
                 keyboardShouldPersistTaps="handled"
                 contentContainerStyle={{
-                    flex:1
+                    flex: 1
                 }}
             >
-                
+
                 <KeyboardAvoidingView enabled>
+
+                    <View style={{ marginHorizontal: 15, marginBottom: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }} >
+
+                        <TouchableOpacity
+                            onPress={() => {
+                                navigation.goBack();
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ fontSize: 17, color: 'white', fontWeight: 'bold' }}>
+                            Register yourself
+                        </Text>
+                        <View></View>
+                    </View>
                     <View style={styles.sectionStyle}>
                         <TextInput
                             style={styles.inputStyle}
@@ -175,7 +191,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         height: 40,
         marginTop: 25,
-        marginHorizontal:35,
+        marginHorizontal: 35,
     },
     buttonStyle: {
         backgroundColor: "#7DE24E",
@@ -185,8 +201,8 @@ const styles = StyleSheet.create({
         height: 40,
         alignItems: "center",
         borderRadius: 30,
-        marginHorizontal:35,
-        marginVertical:50
+        marginHorizontal: 35,
+        marginVertical: 50
     },
     buttonTextStyle: {
         color: "#FFFFFF",

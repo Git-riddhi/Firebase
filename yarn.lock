@@ -6630,6 +6630,11 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
 
+"react-native-biometrics@^3.0.1":
+  "integrity" "sha512-Ru80gXRa9KG04sl5AB9HyjLjVbduhqZVjA+AiOSGqr+fNqCDmCu9y5WEksnjbnniNLmq1yGcw+qcLXmR1ddLDQ=="
+  "resolved" "https://registry.npmjs.org/react-native-biometrics/-/react-native-biometrics-3.0.1.tgz"
+  "version" "3.0.1"
+
 "react-native-codegen@^0.71.3":
   "integrity" "sha512-rfsuc0zkuUuMjFnrT55I1mDZ+pBRp2zAiRwxck3m6qeGJBGK5OV5JH66eDQ4aa+3m0of316CqrJDRzVlYufzIg=="
   "resolved" "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.71.5.tgz"
@@ -6639,6 +6644,11 @@
     "flow-parser" "^0.185.0"
     "jscodeshift" "^0.13.1"
     "nullthrows" "^1.1.1"
+
+"react-native-contacts@^7.0.7":
+  "integrity" "sha512-UYECbAS7iQPN8vwXSex6oklXGTiJ/6KpWf8EJgMGVg+E1uU3Hx5T+WIiD0g2wNr6pDPNY8u5f1zFNksWSI9Pgw=="
+  "resolved" "https://registry.npmjs.org/react-native-contacts/-/react-native-contacts-7.0.7.tgz"
+  "version" "7.0.7"
 
 "react-native-fbsdk-next@^11.2.1":
   "integrity" "sha512-CfJmexiDpdeAUAGM3uHxLEHyRtiAQTeELoZ+eKp1z9W2X5a7/uITHIxCaqy/B+4GfHCCj4m1WF1RKjOy+d6G/A=="
@@ -6737,6 +6747,11 @@
     "color" "^3.1.2"
     "use-latest-callback" "^0.1.5"
 
+"react-native-permissions@^3.10.1":
+  "integrity" "sha512-Gc5BxxpjZn4QNUDiVeHOO0vXh3AH7ToolmwTJozqC6DsxV7NAf3ttap+8BSmzDR8WxuAM3Cror+YNiBhHJx7/w=="
+  "resolved" "https://registry.npmjs.org/react-native-permissions/-/react-native-permissions-3.10.1.tgz"
+  "version" "3.10.1"
+
 "react-native-push-notification@^8.1.1":
   "integrity" "sha512-XpBtG/w+a6WXTxu6l1dNYyTiHnbgnvjoc3KxPTxYkaIABRmvuJZkFxqruyGvfCw7ELAlZEAJO+dthdTabCe1XA=="
   "resolved" "https://registry.npmjs.org/react-native-push-notification/-/react-native-push-notification-8.1.1.tgz"
@@ -6798,6 +6813,11 @@
   dependencies:
     "use-latest-callback" "^0.1.5"
 
+"react-native-touch-id@^4.4.1":
+  "integrity" "sha512-1jTl8fC+0fxvqegy/XXTyo6vMvPhjzkoDdaqoYZx0OH8AT250NuXnNPyKktvigIcys3+2acciqOeaCall7lrvg=="
+  "resolved" "https://registry.npmjs.org/react-native-touch-id/-/react-native-touch-id-4.4.1.tgz"
+  "version" "4.4.1"
+
 "react-native-vector-icons@*", "react-native-vector-icons@^9.2.0", "react-native-vector-icons@>= 6.0.0":
   "integrity" "sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz"
@@ -6806,7 +6826,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.72 || 1000.0.0", "react-native@>= 0.59", "react-native@>= 0.64.3", "react-native@>=0.33", "react-native@>=0.40.0", "react-native@>=0.42.0", "react-native@>=0.57", "react-native@>=0.57.0", "react-native@>=0.58.4", "react-native@>=0.63.3", "react-native@0.71.1":
+"react-native@*", "react-native@^0.0.0-0 || 0.60 - 0.72 || 1000.0.0", "react-native@>= 0.59", "react-native@>= 0.64.3", "react-native@>=0.33", "react-native@>=0.40.0", "react-native@>=0.42.0", "react-native@>=0.57", "react-native@>=0.57.0", "react-native@>=0.58.4", "react-native@>=0.60.0", "react-native@>=0.63.3", "react-native@>=0.64.0", "react-native@0.71.1":
   "integrity" "sha512-bLP5+IBj2IX6tgF9WnC/UL2ZPYkVUPsU4xqZV1jntTC2TH4xyLrvfKACjGlz5nQ3Mx4BmOFqsnMxithm53+6Aw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.71.1.tgz"
   "version" "0.71.1"
@@ -6868,7 +6888,7 @@
     "react-shallow-renderer" "^16.15.0"
     "scheduler" "^0.23.0"
 
-"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 17.0.1", "react@>=15.0.0", "react@>=16", "react@>=16.0", "react@>=16.3.0", "react@>=16.6.3", "react@>=16.8", "react@>=17.0.0", "react@18.2.0":
+"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 17.0.1", "react@>=15.0.0", "react@>=16", "react@>=16.0", "react@>=16.13.1", "react@>=16.3.0", "react@>=16.6.3", "react@>=16.8", "react@>=17.0.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
