@@ -5,7 +5,7 @@ import SaveContactWithoutNotification from './Firebase/SaveContactUsingPushnotif
 const App = () => {
   return (
 
-    <SaveContactWithoutNotification/>
+    <SaveContact/>
   );
 };
 
