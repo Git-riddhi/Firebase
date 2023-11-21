@@ -4,9 +4,9 @@ import AuthNavigator from "./Firebase/EmailPassword/AuthNavigator";
 const App = () => {
   return (
   
-   
-      <AuthNavigator />
-
+    <LoginProvider>
+      <StackNavigator />
+    </LoginProvider>
 
   );
 };

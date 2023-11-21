@@ -1,6 +1,8 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 apply plugin: 'com.google.gms.google-services' 
+apply plugin: 'com.google.firebase.crashlytics'
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 import com.android.build.OutputFile
 
@@ -94,9 +96,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.mynewproject"
+    namespace "com.firebaseauth"
     defaultConfig {
-        applicationId "com.mynewproject"
+        applicationId "com.firebaseauth"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -129,6 +131,11 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
+              firebaseCrashlytics {
+                nativeSymbolUploadEnabled true
+                unstrippedNativeLibsDir 'build/intermediates/merged_native_libs/release/out/lib'
+            }
         }
     }
 
@@ -152,10 +159,15 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
-    implementation 'com.google.firebase:firebase-auth'
+    // implementation 'com.google.firebase:firebase-auth'
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
     implementation ('com.google.android.gms:play-services-safetynet:18.0.1')
-    
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
+    // implementation 'com.facebook.android:facebook-android-sdk:11.2.1'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation project(':react-native-fs')
+    implementation project(':react-native-vector-icons')
+    implementation project(':react-native-contacts')
 
     implementation(project(':react-native-maps')){
       exclude group: 'com.google.android.gms'

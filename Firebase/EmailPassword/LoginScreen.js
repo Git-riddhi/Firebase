@@ -56,6 +56,7 @@ const LoginScreen = ({ navigation }) => {
             });
     };
 
+
     return (
         <SafeAreaView style={styles.mainBody}>
             <ScrollView
@@ -68,17 +69,6 @@ const LoginScreen = ({ navigation }) => {
             >
                 <View>
                     <KeyboardAvoidingView enabled>
-                        <View style={{ alignItems: "center" }}>
-                            {/* <Image
-                source={require("../Image/aboutreact.png")}
-                style={{
-                  width: "50%",
-                  height: 100,
-                  resizeMode: "contain",
-                  margin: 30,
-                }}
-              /> */}
-                        </View>
                         <View style={styles.sectionStyle}>
                             <TextInput
                                 style={styles.inputStyle}
@@ -130,35 +120,26 @@ const LoginScreen = ({ navigation }) => {
                                 LOGIN
                             </Text>
                         </TouchableOpacity>
+
+
+                        <Text style={styles.forgotButtonText} onPress={() => {
+                            navigation.navigate('ForgotPassword')
+                        }
+                        }> Forgot Password ? </Text>
+
+
                         <Text
                             style={styles.registerTextStyle}
                             onPress={() =>
                                 navigation.navigate("Register")
                             }
                         >
-                            New Here ? Register
+                            New Here ?   REGISTER
                         </Text>
                     </KeyboardAvoidingView>
                 </View>
             </ScrollView>
-            <Text
-                style={{
-                    fontSize: 18,
-                    textAlign: "center",
-                    color: "white",
-                }}
-            >
-                React Native Firebase Authentication
-            </Text>
-            {/* <Text
-        style={{
-          fontSize: 16,
-          textAlign: "center",
-          color: "white",
-        }}
-      >
-        www.aboutreact.com
-      </Text> */}
+
         </SafeAreaView>
     );
 };
@@ -175,8 +156,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         height: 40,
         marginTop: 20,
-        marginLeft: 35,
-        marginRight: 35,
+        marginHorizontal: 35,
         margin: 10,
     },
     buttonStyle: {
@@ -187,10 +167,8 @@ const styles = StyleSheet.create({
         height: 40,
         alignItems: "center",
         borderRadius: 30,
-        marginLeft: 35,
-        marginRight: 35,
-        marginTop: 20,
-        marginBottom: 25,
+        marginHorizontal: 35,
+        marginVertical: 30
     },
     buttonTextStyle: {
         color: "#FFFFFF",
@@ -219,4 +197,9 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 14,
     },
+    forgotButtonText: {
+        fontSize: 13,
+        color: 'white', textAlign: 'center',
+        marginBottom: 50,
+    }
 });

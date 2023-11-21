@@ -11,6 +11,7 @@ import {
     TouchableOpacity,
     ScrollView,
 } from "react-native";
+import AntDesign from "react-native-vector-icons/AntDesign";
 
 import auth from "@react-native-firebase/auth";
 
@@ -67,27 +68,31 @@ const RegisterScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView
-            style={{ flex: 1, backgroundColor: "#307ecc" }}
+            style={{ flex: 1, backgroundColor: "#307ecc", paddingTop: 20 }}
         >
             <ScrollView
                 keyboardShouldPersistTaps="handled"
                 contentContainerStyle={{
-                    justifyContent: "center",
-                    alignContent: "center",
+                    flex: 1
                 }}
             >
-                <View style={{ alignItems: "center" }}>
-                    {/* <Image
-            source={require("../Image/aboutreact.png")}
-            style={{
-              width: "50%",
-              height: 100,
-              resizeMode: "contain",
-              margin: 30,
-            }}
-          /> */}
-                </View>
+
                 <KeyboardAvoidingView enabled>
+
+                    <View style={{ marginHorizontal: 15, marginBottom: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }} >
+
+                        <TouchableOpacity
+                            onPress={() => {
+                                navigation.goBack();
+                            }}
+                        >
+                            <AntDesign name="arrowleft" size={30} color={"white"} />
+                        </TouchableOpacity>
+                        <Text style={{ fontSize: 17, color: 'white', fontWeight: 'bold' }}>
+                            Register yourself
+                        </Text>
+                        <View></View>
+                    </View>
                     <View style={styles.sectionStyle}>
                         <TextInput
                             style={styles.inputStyle}
@@ -158,7 +163,7 @@ const RegisterScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </KeyboardAvoidingView>
             </ScrollView>
-            <Text
+            {/* <Text
                 style={{
                     fontSize: 18,
                     textAlign: "center",
@@ -166,7 +171,7 @@ const RegisterScreen = ({ navigation }) => {
                 }}
             >
                 React Native Firebase Authentication
-            </Text>
+            </Text> */}
             {/* <Text
         style={{
           fontSize: 16,
@@ -185,10 +190,8 @@ const styles = StyleSheet.create({
     sectionStyle: {
         flexDirection: "row",
         height: 40,
-        marginTop: 20,
-        marginLeft: 35,
-        marginRight: 35,
-        margin: 10,
+        marginTop: 25,
+        marginHorizontal: 35,
     },
     buttonStyle: {
         backgroundColor: "#7DE24E",
@@ -198,10 +201,8 @@ const styles = StyleSheet.create({
         height: 40,
         alignItems: "center",
         borderRadius: 30,
-        marginLeft: 35,
-        marginRight: 35,
-        marginTop: 20,
-        marginBottom: 20,
+        marginHorizontal: 35,
+        marginVertical: 50
     },
     buttonTextStyle: {
         color: "#FFFFFF",

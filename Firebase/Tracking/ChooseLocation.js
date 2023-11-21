@@ -17,8 +17,8 @@ const ChooseLocation = (props) => {
 
     const { destinationCords } = state
 
-    const checkValid = () =>{
-        if(Object.keys(destinationCords).length === 0){
+    const checkValid = () => {
+        if (Object.keys(destinationCords).length === 0) {
             showError('Please enter your destination location')
             return false
         }
@@ -27,16 +27,17 @@ const ChooseLocation = (props) => {
 
     const onDone = () => {
         const isValid = checkValid()
-        if(isValid){
+        if (isValid) {
             props.route.params.getCordinates({
                 destinationCords
             })
             navigation.goBack()
         }
     }
+
     const fetchDestinationCords = (lat, lng, zipCode, cityText) => {
-        console.log("zip code==>>>",zipCode)
-        console.log('city texts',cityText)
+        console.log("zip code==>>>", zipCode)
+        console.log('city texts', cityText)
         // console.log('state====>',state)
 
         setState({
@@ -44,7 +45,7 @@ const ChooseLocation = (props) => {
             destinationCords: {
                 latitude: lat,
                 longitude: lng,
-                
+
             }
         })
     }
@@ -56,7 +57,7 @@ const ChooseLocation = (props) => {
                 style={{ backgroundColor: 'white', flex: 1, padding: 24 }}
             >
                 <View style={{ marginBottom: 16 }} />
-              
+
                 <AddressPickup
                     placheholderText="Enter Destination Location"
                     fetchAddress={fetchDestinationCords}
@@ -64,7 +65,7 @@ const ChooseLocation = (props) => {
                 <CustomBtn
                     btnText="Done"
                     onPress={onDone}
-                    btnStyle={{marginTop: 24}}
+                    btnStyle={{ marginTop: 24 }}
                 />
             </ScrollView>
         </View>
@@ -73,7 +74,6 @@ const ChooseLocation = (props) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
     },
 });
 export default ChooseLocation;
