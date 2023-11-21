@@ -1,11 +1,13 @@
-import React from 'react';
-import SaveContact from './Firebase/SaveContactUsingPushnotification/SaveContact';
-import SaveContactWithoutNotification from './Firebase/SaveContactUsingPushnotification/SaveContactWithoutNotification';
+import React from "react";
+import AuthNavigator from "./Firebase/EmailPassword/AuthNavigator";
 
 const App = () => {
   return (
+  
+    <LoginProvider>
+      <StackNavigator />
+    </LoginProvider>
 
-    <SaveContact/>
   );
 };
 
